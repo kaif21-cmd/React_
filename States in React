@@ -1,28 +1,59 @@
-//What is state ? The English meaning of state is the particular condition that someone or something is in at a specific time.
-// How to set a state
-// We set an initial state inside the constructor or outside the constructor of a class based component. We do not directly change or mutate the state but we use the setState() method to reset to a new state. . As you can see below in the state object we have count with initial value 0. We can access the state object using this.state and the property name. See the example below.
-import React, { Component } from 'react'
-class App extends Component{
-  state={
-    count:0
-  }
-  render(){
-    const count=this.state.count
-    return(
-      <div className='App'>
-        <h1>{count}</h1>
-        <button 
-        onClick={() => this.setState({ count: this.state.count + 1 })}>
-          Add One
-        </button>
-        <button
-            onClick={() => this.setState({ count: this.state.count - 1 })}
-          >
-            Minus One
-          </button>
-        
-        </div>
-    )
+```jsx
+import React, { Component } from 'react';
+
+class Kaif extends Component {
+  render() {
+    const { id, name, Profession, Email, Phone } = this.props.data;
+    return (
+      <div>
+        <p>{id}</p>
+        <p>{name}</p>
+        <p>{Profession}</p>
+        <p>{Email}</p>
+        <p>{Phone}</p>
+      </div>
+    );
   }
 }
-export default App
+
+class Shahan extends Component {
+  render() {
+    const { id, name, Profession, Email, Phone } = this.props.data2;
+    return (
+      <div>
+        <p>{id}</p>
+        <p>{name}</p>
+        <p>{Profession}</p>
+        <p>{Email}</p>
+        <p>{Phone}</p>
+      </div>
+    );
+  }
+}
+
+class App extends Component {
+  render() {
+    const data = {
+      id: 1,
+      name: "Kaif",
+      Profession: "Software Engineer",
+      Email: "Kaifshaikh262000@gmail.com",
+      Phone: 9648338838,
+    };
+    const data2 = {
+      id: 2,
+      name: "Shahan Khan",
+      Profession: "Software Engineer",
+      Email: "Shahankhan262000@gmail.com",
+      Phone: 9641338838,
+    };
+    return (
+      <div>
+        <Kaif data={data} />
+        <Shahan data2={data2} />
+      </div>
+    );
+  }
+}
+
+export default App;

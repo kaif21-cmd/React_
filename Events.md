@@ -7,7 +7,7 @@ React events are named using camelCase, rather than lowercase.
 With JSX you pass a function as the event handler, rather than a string.
 Let's see some examples to understand event handling.
 
-'''jsx
+```jsx
 import React from 'react'
 // if it is functional components
 const App = () => {
@@ -17,5 +17,18 @@ const App = () => {
   return <button onClick={greetPeople}> </button>
 }
 '''
+'''jsx
+import React, { Component } from 'react'
+// if it is functional components
+class App extends Component {
+  greetPeople = () => {
+    alert('Welcome to 30 Days Of React Challenge')
+  }
+  render() {
+    return <button onClick={this.greetPeople}> </button>
+  }
+}
+```
+
 
 

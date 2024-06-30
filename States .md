@@ -1,4 +1,5 @@
 ```jsx
+# States in React Counter Application
 import React ,{useState} from 'react'
 const Counter=()=>{
   const [count,setCount]=useState(0);

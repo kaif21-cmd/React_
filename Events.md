@@ -17,7 +17,7 @@ const App = () => {
   return <button onClick={greetPeople}> </button>
 }
 '''
-'''jsx
+# using Class
 import React, { Component } from 'react'
 // if it is functional components
 class App extends Component {

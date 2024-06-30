@@ -16,7 +16,7 @@ const App = () => {
   }
   return <button onClick={greetPeople}> </button>
 }
-'''
+
 # using Class
 import React, { Component } from 'react'
 // if it is functional components

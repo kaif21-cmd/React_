@@ -1,4 +1,4 @@
-###FORM WITH DIFFERENT INPUTS FIELDS 
+# FORM WITH DIFFERENT INPUTS FIELDS 
 ```jsx
 import React, { Component } from 'react';
 

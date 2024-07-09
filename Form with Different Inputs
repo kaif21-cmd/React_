@@ -1,5 +1,5 @@
 # FORM WITH DIFFERENT INPUTS FIELDS 
-```html
+```JSX
 import React, { Component } from 'react';
 
 const options = [

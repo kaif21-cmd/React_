@@ -1,3 +1,4 @@
+# FORM WITH DIFFERENT INPUTS
 ```jsx
 import React, { Component } from 'react';
 

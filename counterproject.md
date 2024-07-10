@@ -78,5 +78,5 @@ body{
   .Kaif:hover {
     background-color: #0056b3;
   }
-  #link: <a>https://668e90dc7ec5670ddd9d59ce--venerable-chimera-0299cb.netlify.app/</a>
+  You can check out the live demo here
   ```

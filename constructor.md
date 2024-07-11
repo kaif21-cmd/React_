@@ -76,46 +76,30 @@ class App extends Component {
         super(props);
         this.state = {
             count: 0,
-            shouldUnmount: false
         };
     }
 
     componentDidMount() {
-        this.intervalId = setInterval(() => {
-            if (this.state.count < 10) {
-                this.setState(prevState => ({
-                    count: prevState.count + 1
-                }));
-            } else {
-                clearInterval(this.intervalId);
-                this.setState({
-                    shouldUnmount: true
-                });
-            }
+        setInterval(() => {
+            this.setState({
+                count: this.state.count + 1
+            });
         }, 1000);
     }
 
-    componentWillUnmount() {
-        clearInterval(this.intervalId);
-    }
-
     render() {
-        const { count, shouldUnmount } = this.state;
-
-        if (shouldUnmount) {
-            return null; // or any component or message for when unmounted
-        }
-
+        const counter = this.state.count;
         return (
             <div>
                 <h1>Timer</h1>
-                <h2>{count}</h2>
+                <h2>{counter}</h2>
             </div>
         );
     }
 }
 
 export default App;
+
 
 
 ```

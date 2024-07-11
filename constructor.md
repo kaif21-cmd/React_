@@ -179,12 +179,12 @@ export default App;
 
 ```
 #### UPDATING 
-**UPDATING** is like changing settings on your gadget:
-**shouldComponentUpdate** : built-in life cycle method should return a boolean. If this method does not return true the application will not update.
+**UPDATING** is like changing settings on your gadget
+#### shouldComponentUpdate : built-in life cycle method should return a boolean. If this method does not return true the application will not update.
 
 If the method does not return true the application will never update. This can be used for instance to block use when it reaches to a certain point(game, subscription) or may be to block a certain user.
 
-**componentDidUpdate**
+#### componentDidUpdate
 if we want to stop doing challenge after 30 days we can increment the day from 1 to 30 and we can block the application at day 30.
 The componentDidUpdate method takes two parameters: the prevProps and prevState. It is called after the component is updated in the DOM.
 

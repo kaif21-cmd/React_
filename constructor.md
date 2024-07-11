@@ -241,3 +241,53 @@ class App extends Component {
 export default App
 
 ```
+
+## Unmounting
+
+The final phase in the lifecycle of a component is unmounting. The unmounting phase removes component from the DOM.
+The componentWillUnmount method is the only built-in method that gets called when a component is unmounted
+```jsx
+import React, { Component } from 'react';
+
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            count: 0,
+            message: '',
+        };
+        this.timerID = null; // Initialize timerID
+    }
+
+    componentDidMount() {
+        this.timerID = setInterval(() => {
+            if (this.state.count >= 30) {
+                clearInterval(this.timerID); // Stop the timer when count reaches 30
+                this.setState({ message: 'Time is Completed Just Stop Working  !' });
+            } else {
+                this.setState({
+                    count: this.state.count + 1
+                });
+            }
+        }, 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timerID); // Clear interval when component is unmounting
+    }
+
+    render() {
+        const { count, message } = this.state;
+        return (
+            <div>
+                <h1>Timer</h1>
+                <h2>{count}</h2>
+                {message && <p>{message}</p>}
+            </div>
+        );
+    }
+}
+
+export default App;
+
+```

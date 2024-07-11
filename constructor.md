@@ -103,4 +103,77 @@ export default App;
 
 
 ```
+### In the above snippet of code, we saw how to implement setTimeout inside a componentDidMount method. In next example, we will implement an API call using fetch.
+```jsx
+import React, { Component } from 'react';
 
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            students: [],
+            loading: true,
+            error: null,
+        };
+    }
+
+    componentDidMount() {
+        const apiUrl = 'https://freetestapi.com/api/v1/students';
+        
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                this.setState({
+                    students: data,
+                    loading: false,
+                });
+            })
+            .catch(error => {
+                this.setState({
+                    error: 'Error fetching data',
+                    loading: false,
+                });
+                console.error('Error fetching data:', error);
+            });
+    }
+
+    render() {
+        const { students, loading, error } = this.state;
+
+        return (
+            <div>
+                <h1>Students Loading List</h1>
+                {loading && <p>Loading...</p>}
+                {error && <p>{error}</p>}
+                <ul>
+                    {students.map(student => (
+                        <li key={student.id}>
+                            <strong>Name:</strong>
+                             {student.name},
+                             <br>
+                             </br>
+                            {student.age},
+                            <br>
+                            </br>
+                            {student.email},
+                            <br>
+                            </br>
+                            {student.phone}
+                            <br>
+                            </br>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        );
+    }
+}
+
+export default App;
+
+```

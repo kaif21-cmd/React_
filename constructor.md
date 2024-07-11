@@ -103,6 +103,7 @@ export default App;
 
 
 ```
+### Implementing Api
 ### In the above snippet of code, we saw how to implement setTimeout inside a componentDidMount method. In next example, we will implement an API call using fetch.
 ```jsx
 import React, { Component } from 'react';

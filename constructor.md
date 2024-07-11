@@ -65,3 +65,57 @@ class App extends Component {
 
 export default App;
 ```
+### componentDidMount method
+
+#### As we can understand the name of the method that this method called after component is render. This a place place to setting time interval and calling API. Look at the following setTimeout implementation in componentDidMount method.
+```jsx
+import React, { Component } from 'react';
+
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            count: 0,
+            shouldUnmount: false
+        };
+    }
+
+    componentDidMount() {
+        this.intervalId = setInterval(() => {
+            if (this.state.count < 10) {
+                this.setState(prevState => ({
+                    count: prevState.count + 1
+                }));
+            } else {
+                clearInterval(this.intervalId);
+                this.setState({
+                    shouldUnmount: true
+                });
+            }
+        }, 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.intervalId);
+    }
+
+    render() {
+        const { count, shouldUnmount } = this.state;
+
+        if (shouldUnmount) {
+            return null; // or any component or message for when unmounted
+        }
+
+        return (
+            <div>
+                <h1>Timer</h1>
+                <h2>{count}</h2>
+            </div>
+        );
+    }
+}
+
+export default App;
+
+```
+

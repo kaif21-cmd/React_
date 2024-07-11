@@ -180,7 +180,7 @@ export default App;
 ```
 #### UPDATING 
 **UPDATING** is like changing settings on your gadget:
-**shouldComponentUpdate** The shouldComponentUpdate() built-in life cycle method should return a boolean. If this method does not return true the application will not update.
+**shouldComponentUpdate** : built-in life cycle method should return a boolean. If this method does not return true the application will not update.
 
 If the method does not return true the application will never update. This can be used for instance to block use when it reaches to a certain point(game, subscription) or may be to block a certain user.
 

@@ -31,3 +31,37 @@
 - **componentWillUnmount**: You clean up any leftover things, like turning off timers or stopping any ongoing processes.
 
 These phases help manage how components behave as they are created, updated with new information, and finally removed from use.
+
+### Constructor in React Component
+
+In React, the constructor is a special method used for initializing a component when it's first created. It's called before the component is mounted. Here's an example of a React component `App` that demonstrates the use of a constructor:
+
+```jsx
+import React, { Component } from 'react';
+
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            Firstname: 'Kaif'
+        };
+    }
+
+    name = () => {
+        this.setState({
+            Firstname: this.state.Firstname
+        });
+    }
+
+    render() {
+        const name = this.state.Firstname;
+        return (
+            <div>
+                <p>Name is {name}</p>
+            </div>
+        );
+    }
+}
+
+export default App;
+```

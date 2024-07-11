@@ -178,7 +178,7 @@ class App extends Component {
 export default App;
 
 ```
-###UPDATING 
+#### UPDATING 
 ***UPDATING*** is like changing settings on your gadget:
 ***shouldComponentUpdate*** The shouldComponentUpdate() built-in life cycle method should return a boolean. If this method does not return true the application will not update.
 

@@ -178,3 +178,66 @@ class App extends Component {
 export default App;
 
 ```
+###UPDATING 
+***UPDATING*** is like changing settings on your gadget:
+***shouldComponentUpdate*** The shouldComponentUpdate() built-in life cycle method should return a boolean. If this method does not return true the application will not update.
+
+If the method does not return true the application will never update. This can be used for instance to block use when it reaches to a certain point(game, subscription) or may be to block a certain user.
+
+***componentDidUpdate***
+if we want to stop doing challenge after 30 days we can increment the day from 1 to 30 and we can block the application at day 30.
+The componentDidUpdate method takes two parameters: the prevProps and prevState. It is called after the component is updated in the DOM.
+
+```jsx
+import React, { Component } from 'react'
+
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    console.log('I am  the constructor and  I will be the first to run.')
+    this.state = {
+      day: 1,
+      congratulate: '',
+    }
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log(nextProps, nextState)
+    console.log(nextState.day)
+    if (nextState.day > 31) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+  doChallenge = () => {
+    this.setState({
+      day: this.state.day + 1,
+    })
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.day === 30) {
+      this.setState({
+        congratulate: 'Congratulations,Challenge has been completed',
+      })
+    }
+    console.log(prevState, prevProps)
+  }
+
+  render() {
+    return (
+        
+      <div className='App'>
+        <button onClick={this.doChallenge}>Do Challenge</button>
+        <p>Challenge: Day {this.state.day}</p>
+        {this.state.congratulate && <h2>{this.state.congratulate}</h2>}
+      </div>
+    )
+  }
+}
+
+export default App
+
+```

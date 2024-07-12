@@ -291,3 +291,71 @@ class App extends Component {
 export default App;
 
 ```
+### CLOCK APP
+
+```jsx
+import React, { Component } from 'react';
+import './kaif.css'
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      elapsedTime: 0,
+      isRunning: false,
+    };
+    this.timerID = null;
+  }
+
+  start = () => {
+    if (!this.state.isRunning) {
+      this.timerID = setInterval(() => this.tick(), 1000);
+      this.setState({ isRunning: true });
+    }
+  };
+
+  stop = () => {
+    if (this.state.isRunning) {
+      clearInterval(this.timerID);
+      this.setState({ isRunning: false });
+    }
+  };
+
+  reset = () => {
+    this.stop();
+    this.setState({ elapsedTime: 0 });
+  };
+
+  tick = () => {
+    this.setState((prevState) => ({
+      elapsedTime: prevState.elapsedTime + 1,
+    }));
+  };
+
+  componentWillUnmount() {
+    if (this.state.isRunning) {
+      clearInterval(this.timerID);
+    }
+  }
+
+  render() {
+    const { elapsedTime } = this.state;
+    const minutes = Math.floor(elapsedTime / 60);
+    const seconds = elapsedTime % 60;
+
+    return (
+      <div>
+        <h1>Stopwatch</h1>
+        <h2>
+          {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
+        </h2>
+        <button onClick={this.start}>Start</button>
+        <button onClick={this.stop}>Stop</button>
+        <button onClick={this.reset}>Reset</button>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+```

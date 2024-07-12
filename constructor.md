@@ -359,3 +359,76 @@ class App extends Component {
 export default App;
 
 ```
+
+##3 JOKE GENRATOR 
+```jsx
+import React, { Component } from 'react';
+import './kaif.css'
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      joke: '',
+      loading: true,
+      error: null,
+    };
+
+    // Bind the method to handle button click
+    this.fetchJoke = this.fetchJoke.bind(this);
+  }
+
+  componentDidMount() {
+    this.fetchJoke();
+  }
+
+  fetchJoke() {
+    const api = 'https://sv443.net/jokeapi/v2/joke/Programming?type=single'; // Replace with a real API endpoint
+    fetch(api)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.setState({
+          joke: data.joke,
+          loading: false,
+        });
+      })
+      .catch(error => {
+        this.setState({
+          error: 'Error fetching data',
+          loading: false,
+        });
+        console.error('Error fetching data:', error);
+      });
+  }
+
+  render() {
+    const { joke, loading, error } = this.state;
+
+    return (
+      <div className="container">
+        <h1>JOKE GENERATOR</h1>
+        <div>
+          {loading ? (
+            <p>Loading...</p>
+          ) : error ? (
+            <p className="error-message">{error}</p>
+          ) : (
+            <p className="joke-text">{joke}</p>
+          )}
+          <button onClick={this.fetchJoke}>
+            Click for a new joke
+          </button>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+```

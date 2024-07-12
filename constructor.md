@@ -360,7 +360,7 @@ export default App;
 
 ```
 
-##3 JOKE GENRATOR 
+### JOKE GENRATOR 
 ```jsx
 import React, { Component } from 'react';
 import './kaif.css'

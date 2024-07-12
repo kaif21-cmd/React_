@@ -189,56 +189,57 @@ if we want to stop doing challenge after 30 days we can increment the day from 1
 The componentDidUpdate method takes two parameters: the prevProps and prevState. It is called after the component is updated in the DOM.
 
 ```jsx
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    console.log('I am  the constructor and  I will be the first to run.')
-    this.state = {
-      day: 1,
-      congratulate: '',
+    constructor(props) {
+        super(props);
+        this.state = {
+            day: 1,
+            congrulate: '',
+        };
     }
-  }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log(nextProps, nextState)
-    console.log(nextState.day)
-    if (nextState.day > 31) {
-      return false
-    } else {
-      return true
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log(nextProps, nextState);
+        console.log(nextState.day);
+        if (nextState.day > 31) {
+            return false;
+        } else {
+            return true;
+        }
     }
-  }
 
-  doChallenge = () => {
-    this.setState({
-      day: this.state.day + 1,
-    })
-  }
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.day === 30) {
-      this.setState({
-        congratulate: 'Congratulations,Challenge has been completed',
-      })
+    dochallenge = () => {
+        this.setState({
+            day: this.state.day + 1,
+        });
+    };
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevState.day === 30) {
+            this.setState({
+                congrulate: 'Congratulations! 30 day challenge is completed',
+            });
+        }
+        console.log(prevState, prevProps);
     }
-    console.log(prevState, prevProps)
-  }
 
-  render() {
-    return (
-        
-      <div className='App'>
-        <button onClick={this.doChallenge}>Do Challenge</button>
-        <p>Challenge: Day {this.state.day}</p>
-        {this.state.congratulate && <h2>{this.state.congratulate}</h2>}
-      </div>
-    )
-  }
+    render() {
+        const { day, congrulate } = this.state;
+
+        return (
+            <div>
+                <h1>{day}</h1>
+                <button onClick={this.dochallenge}>Click</button>
+                <h1>{congrulate}</h1>
+            </div>
+        );
+    }
 }
 
-export default App
+export default App;
+
 
 ```
 

@@ -60,3 +60,44 @@ function App() {
 export default App;
 
 ```
+# Navlinks Navbar
+```jsx
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import Home from './Home'; // Check the correct path for Home component
+import AboutPage from './Aboutpage'; // Check the correct path for AboutPage component
+
+
+function App() {
+  return (
+    <Router>
+      <div className='App'>
+        <ul>
+          <li>
+            <NavLink
+              to='/home'
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='/about'
+            >
+              About
+            </NavLink>
+          </li>
+        </ul>
+        <Routes>
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<AboutPage />} />
+
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+```

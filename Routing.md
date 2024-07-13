@@ -101,6 +101,39 @@ function App() {
 export default App;
 
 ```
+# What is Redirect ? 
+This setup will ensure that when a user lands on the root URL, they are redirected to the /home route automatically.
+```jsx
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from 'react-router-dom';
+import Home from './Home'; // Check the correct path for Home component
+import Aboutpage from './Aboutpage'; // Check the correct path for AboutPage component
+
+function App() {
+  return (
+    <Router>
+      <div className='App'>
+        <ul>
+          <li>
+            <NavLink to='/home'>Home</NavLink>
+          </li>
+          <li>
+            <NavLink to='/about'>About</NavLink>
+          </li>
+        </ul>
+        <Routes>
+          <Route path='/' element={<Navigate to='/home' />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<Aboutpage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+```
 # Dynamic Routing 
 # UserProfile Page
 ```jsx

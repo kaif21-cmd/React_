@@ -294,3 +294,73 @@ function App() {
 export default App;
 
 ```
+# What is Prompt
+This approach allows you to manage navigation prompts in a more controlled and declarative manner, aligning with React Router v6's paradigm. Adjust the logic in handleNavigation as per your specific requirements for checking conditions before allowing navigation.
+```jsx
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+
+function Home() {
+  const [isPromptActive, setPromptActive] = useState(false);
+
+  // Function to set prompt active
+  const handlePrompt = () => {
+    setPromptActive(true);
+  };
+
+  // Function to handle navigation
+  const handleNavigation = () => {
+    // Perform any checks or actions before navigation
+
+    // Navigate away (example, redirect to home)
+    return <Navigate to="/home" />;
+  };
+
+  return (
+    <div>
+      <h2>Home Page</h2>
+      <button onClick={handlePrompt}>Navigate to About</button>
+      {isPromptActive && (
+        <div>
+          <p>Are you sure you want to navigate away?</p>
+          <button onClick={handleNavigation}>Yes, Navigate</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function AboutPage() {
+  return (
+    <div>
+      <h2>About Page</h2>
+      <p>This is the about page content.</p>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <ul>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/*" element={<Navigate to="/home" />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+```

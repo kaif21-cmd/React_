@@ -366,7 +366,7 @@ export default App;
 ```
 
 # Creating Navbar
-[![Live ](https://6695070bc89110094fa2696b--illustrious-panda-83ac35.netlify.app/kaif)
+[[Live ](https://6695070bc89110094fa2696b--illustrious-panda-83ac35.netlify.app/kaif)
 ```jsx
 import React from 'react'
 import './kaif.css'

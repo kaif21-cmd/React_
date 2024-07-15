@@ -399,10 +399,9 @@ function App(){
     )
 }
 export default App
-[![Alt Text](https://6695070bc89110094fa2696b--illustrious-panda-83ac35.netlify.app/kaif)](https://6695070bc89110094fa2696b--illustrious-panda-83ac35.netlify.app/kaif)
-
-
 ```
+[![Live ](https://6695070bc89110094fa2696b--illustrious-panda-83ac35.netlify.app/kaif)](https://6695070bc89110094fa2696b--illustrious-panda-83ac35.netlify.app/kaif)
+
 # CSS navbar 
 ```jsx
 body {

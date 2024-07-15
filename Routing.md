@@ -364,3 +364,87 @@ function App() {
 export default App;
 
 ```
+
+# Creating Navbar
+```jsx
+import React from 'react'
+import './kaif.css'
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from 'react-router-dom';
+import Home from './Home';
+import AboutPage from './Aboutpage';
+import Kaif from './Kaif';
+function App(){
+    return(
+        <Router>
+            <div>
+                <ul>
+                    <li>
+                       <NavLink to='/home'>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/about'>About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/kaif'>Kaif</NavLink>
+                    </li>
+                </ul>
+                <Routes>
+                    <Route path='/' element={<Navigate to='home'/>}/>
+                    <Route path='/home' element={<Home />}/>
+                    <Route  path='about' element={<AboutPage />}/>
+                    <Route  path='kaif' element={<Kaif />}/>
+                </Routes>
+            </div>
+        </Router>
+    )
+}
+export default App
+live LINK=[![Alt Text](image-url)]([https://www.example.com](https://6695070bc89110094fa2696b--illustrious-panda-83ac35.netlify.app/kaif))
+
+```
+# CSS navbar 
+```jsx
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.container {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+```
+
+

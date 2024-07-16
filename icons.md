@@ -1,6 +1,7 @@
 ### REACT ICONS 
-!! npm install @mui/icons-material
+
 ```jsx
+npm install @mui/icons-material
 import React from 'react';
 import Kaifcricket from '@mui/icons-material/SportsCricket';
 import InstagramIcon from '@mui/icons-material/Instagram';

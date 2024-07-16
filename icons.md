@@ -1,4 +1,4 @@
-### REACT ICONS 
+# REACT ICONS 
 
 ```jsx
 npm install @mui/icons-material

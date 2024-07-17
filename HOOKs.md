@@ -42,3 +42,30 @@ const App=()=>{
 }
 export default App
 ```
+# We can also write separate function instead of writing our function inside the curly brackets.
+```jsx
+// index.js
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
+
+const App = () => {
+  // Declaring new state variable
+  const [count, setCount] = useState(0)
+  const addOne = () => {
+    let value = count + 1
+    setCount(value)
+  }
+  const minusOne = () => {
+    let value = count - 1
+    setCount(value)
+  }
+  return (
+    <div className='App'>
+      <h1>{count} </h1>
+      <button onClick={addOne}>Add One</button> <button onClick={minusOne}>Minus One</button>
+    </div>
+  )
+}
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)
+```

@@ -16,8 +16,8 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Day 8| States                             | [states](https://github.com/kaif21-cmd/React_/blob/main/States%20in%20React.MD)                                             |
 | Day 9| Components Life Cycle              | [Mouting,update,unmounting](https://github.com/kaif21-cmd/React_/blob/main/constructor.md)                     |
 | Day 10| Counter Project                   | [Counter Project](https://github.com/kaif21-cmd/React_/blob/main/counterproject.md)   |
-| Day 11| Thinking in React                 | [Thinking in React](https://github.com/kaifshaikh262000/react-learning/blob/main/day11/thinking-in-react.md)                   |
-| Day 12| React Router                      | [React Router](https://github.com/kaifshaikh262000/react-learning/blob/main/day12/react-router.md)                             |
+| Day 11| Forms Logic in React              | [Forms Logic](https://github.com/kaif21-cmd/React_/blob/main/Forms%20Logic.md)                   |
+| Day 12| Forms                             | [How to Create Forms?](https://github.com/kaif21-cmd/React_/blob/main/FORMS.MD)                             |
 | Day 13| Code Splitting                    | [Code Splitting](https://github.com/kaifshaikh262000/react-learning/blob/main/day13/code-splitting.md)                         |
 | Day 14| Context                           | [Context](https://github.com/kaifshaikh262000/react-learning/blob/main/day14/context.md)                                       |
 | Day 15| Hooks - useState                  | [Hooks - useState](https://github.com/kaifshaikh262000/react-learning/blob/main/day15/hooks-usestate.md)                       |

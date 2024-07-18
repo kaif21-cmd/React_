@@ -18,7 +18,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Day 10| Counter Project                   | [Counter Project](https://github.com/kaif21-cmd/React_/blob/main/counterproject.md)   |
 | Day 11| Forms Logic in React              | [Forms Logic](https://github.com/kaif21-cmd/React_/blob/main/Forms%20Logic.md)                   |
 | Day 12| Forms                             | [How to Create Forms?](https://github.com/kaif21-cmd/React_/blob/main/FORMS.MD)                             |
-| Day 13| Code Splitting                    | [Code Splitting](https://github.com/kaifshaikh262000/react-learning/blob/main/day13/code-splitting.md)                         |
+| Day 13| Forms With Different Inputs       | [with Different inputs](https://github.com/kaif21-cmd/React_/blob/main/Form%20with%20Different%20Inputs.md)                         |
 | Day 14| Context                           | [Context](https://github.com/kaifshaikh262000/react-learning/blob/main/day14/context.md)                                       |
 | Day 15| Hooks - useState                  | [Hooks - useState](https://github.com/kaifshaikh262000/react-learning/blob/main/day15/hooks-usestate.md)                       |
 | Day 16| Hooks - useEffect                 | [Hooks - useEffect](https://github.com/kaifshaikh262000/react-learning/blob/main/day16/hooks-useeffect.md)                     |

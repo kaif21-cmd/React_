@@ -22,7 +22,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Day 14| Fetching Api Project              | [Api fetching](https://github.com/kaif21-cmd/React_/blob/main/API%20APPLICATION.MD)                                       |
 | Day 15| Axios                             | [Axios](https://github.com/kaif21-cmd/React_/blob/main/AXIOS.MD)                       |
 | Day 16| Icons In React                    | [Icons](https://github.com/kaif21-cmd/React_/blob/main/icons.md)                     |
-| Day 17| Custom Hooks                      | [Custom Hooks](https://github.com/kaifshaikh262000/react-learning/blob/main/day17/custom-hooks.md)                             |
+| Day 17| Routing                           | [Routing](https://github.com/kaif21-cmd/React_/blob/main/Routing.md)                             |
 | Day 18| Refs                              | [Refs](https://github.com/kaifshaikh262000/react-learning/blob/main/day18/refs.md)                                             |
 | Day 19| React Performance                 | [React Performance](https://github.com/kaifshaikh262000/react-learning/blob/main/day19/react-performance.md)                   |
 | Day 20| Testing                           | [Testing](https://github.com/kaifshaikh262000/react-learning/blob/main/day20/testing.md)                                       |

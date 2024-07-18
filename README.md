@@ -12,7 +12,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Day 4| Props in Class                     | [props in class](https://github.com/kaif21-cmd/React_/blob/main/Accesing%20Props%20In%20Class.md)                   |
 | Day 5| What is Events?                    | [Events](https://github.com/kaif21-cmd/React_/blob/main/Events.md)                       |
 | Day 6| Events Example & Implementation    |[Events Examples](https://github.com/kaif21-cmd/React_/blob/main/Events._example%20.md)           |
-| Day 7| Lists and Keys                     | [Lists and Keys](https://github.com/kaifshaikh262000/react-learning/blob/main/day7/lists-keys.md)                             |
+| Day 7|  Map Lists and Keys                |[Map Lists and Keys](https://github.com/kaif21-cmd/React_/blob/main/Map.md)                             |
 | Day 8| Forms                              | [Forms](https://github.com/kaifshaikh262000/react-learning/blob/main/day8/forms.md)                                             |
 | Day 9| Lifting State Up                   | [Lifting State Up](https://github.com/kaifshaikh262000/react-learning/blob/main/day9/lifting-state-up.md)                     |
 | Day 10| Composition vs Inheritance        | [Composition vs Inheritance](https://github.com/kaifshaikh262000/react-learning/blob/main/day10/composition-inheritance.md)   |

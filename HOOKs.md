@@ -69,3 +69,6 @@ const App = () => {
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
+# Fetching The api using Hooks
+# USE EFFECT
+using for if sending req and res to the server fetching api and more 

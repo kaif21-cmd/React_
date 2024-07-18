@@ -10,7 +10,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Day 2| JSX and Rendering Elements         | [JSX and Rendering Elements](https://github.com/kaifshaikh262000/react-learning/blob/main/day2/jsx-rendering.md)               |
 | Day 3| What is Props?                     | [Props ](https://github.com/kaif21-cmd/React_/blob/main/PROPS.MD)           
 | Day 4| Props in Class                     | [props in class](https://github.com/kaif21-cmd/React_/blob/main/Accesing%20Props%20In%20Class.md)                   |
-| Day 5| Handling Events                    | [Handling Events](https://github.com/kaifshaikh262000/react-learning/blob/main/day5/handling-events.md)                       |
+| Day 5| Whta is Events?                    | [Events](https://github.com/kaif21-cmd/React_/blob/main/Events.md)                       |
 | Day 6| Conditional Rendering              | [Conditional Rendering](https://github.com/kaifshaikh262000/react-learning/blob/main/day6/conditional-rendering.md)           |
 | Day 7| Lists and Keys                     | [Lists and Keys](https://github.com/kaifshaikh262000/react-learning/blob/main/day7/lists-keys.md)                             |
 | Day 8| Forms                              | [Forms](https://github.com/kaifshaikh262000/react-learning/blob/main/day8/forms.md)                                             |

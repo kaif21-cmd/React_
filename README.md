@@ -14,7 +14,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Day 6| Events Example & Implementation    |[Events Examples](https://github.com/kaif21-cmd/React_/blob/main/Events._example%20.md)           |
 | Day 7|  Map Lists and Keys                |[Map Lists and Keys](https://github.com/kaif21-cmd/React_/blob/main/Map.md)                             |
 | Day 8| States                             | [states](https://github.com/kaif21-cmd/React_/blob/main/States%20in%20React.MD)                                             |
-| Day 9| Lifting State Up                   | [Lifting State Up](https://github.com/kaifshaikh262000/react-learning/blob/main/day9/lifting-state-up.md)                     |
+| Day 9| Components Life Cycle              | [Mouting,update,unmounting](https://github.com/kaif21-cmd/React_/blob/main/constructor.md)                     |
 | Day 10| Composition vs Inheritance        | [Composition vs Inheritance](https://github.com/kaifshaikh262000/react-learning/blob/main/day10/composition-inheritance.md)   |
 | Day 11| Thinking in React                 | [Thinking in React](https://github.com/kaifshaikh262000/react-learning/blob/main/day11/thinking-in-react.md)                   |
 | Day 12| React Router                      | [React Router](https://github.com/kaifshaikh262000/react-learning/blob/main/day12/react-router.md)                             |

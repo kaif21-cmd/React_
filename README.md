@@ -8,7 +8,8 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 |------|------------------------------------|-----------------------------------------------------------------------------------------------|
 | Day 1| Introduction to React              | [Introduction to React](https://github.com/kaifshaikh262000/react-learning/blob/main/day1/introduction.md)                     |
 | Day 2| JSX and Rendering Elements         | [JSX and Rendering Elements](https://github.com/kaifshaikh262000/react-learning/blob/main/day2/jsx-rendering.md)               |
-| Day 3| Components                         | [Components]([https://github.com/kaifshaikh262000/react-learning/blob/main/day3/components-props.md](https://github.com/kaif21-cmd/30-Days-Of-React/blob/master/04_Day_Components/04_components.md))                 |
+| Day 3| Components                         | [Components]([https://github.com/kaifshaikh262000/react-learning/blob/main/day3/components-props.md](https://github.com/kaif21-cmd/30-Days-Of- 
+                                               React/blob/master/04_Day_Components/04_components.md))                 |
 | Day 4| State and Lifecycle                | [State and Lifecycle](https://github.com/kaifshaikh262000/react-learning/blob/main/day4/state-lifecycle.md)                   |
 | Day 5| Handling Events                    | [Handling Events](https://github.com/kaifshaikh262000/react-learning/blob/main/day5/handling-events.md)                       |
 | Day 6| Conditional Rendering              | [Conditional Rendering](https://github.com/kaifshaikh262000/react-learning/blob/main/day6/conditional-rendering.md)           |

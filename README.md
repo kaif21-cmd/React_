@@ -7,7 +7,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Day  | Topic                              | Link                                                                                          |
 |------|------------------------------------|-----------------------------------------------------------------------------------------------|
 | Day 1| Introduction to React              | [Introduction to React](https://github.com/kaif21-cmd/React_/blob/main/Introduction%20In%20React.md)                     |
-| Day 2| JSX and Rendering Elements         | [JSX and Rendering Elements](https://github.com/kaifshaikh262000/react-learning/blob/main/day2/jsx-rendering.md)               |
+| Day 2| Components In React                | [Components](https://github.com/kaif21-cmd/React_/blob/main/Components%20in%20React.md)               |
 | Day 3| What is Props?                     | [Props ](https://github.com/kaif21-cmd/React_/blob/main/PROPS.MD)           
 | Day 4| Props in Class                     | [props in class](https://github.com/kaif21-cmd/React_/blob/main/Accesing%20Props%20In%20Class.md)                   |
 | Day 5| What is Events?                    | [Events](https://github.com/kaif21-cmd/React_/blob/main/Events.md)                       |

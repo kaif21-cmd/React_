@@ -72,3 +72,51 @@ ReactDOM.render(<App />, rootElement)
 # Fetching The api using Hooks
 # USE EFFECT
 using for if sending req and res to the server fetching api and more 
+```jsx
+import React, { useState, useEffect } from 'react';
+const App=()=>{
+    const [students,setStudents]=useState([])
+    const [loading,setLoading]=useState(true)
+    const [error,setError]=useState(null)
+    useEffect(()=>{
+        const Api='https://freetestapi.com/api/v1/students'
+        fetch(Api)
+        .then((response)=>{
+            if(!response.ok){
+                throw new Error("Network is not okay")
+            }
+            return response.json()
+        })
+        .then((data)=>{
+            setStudents(data)
+            setLoading(false)
+        })
+        .catch((error)=>{
+            setError('Error in fetching')
+            setLoading(false)
+            console.error("Error in fetching the api",error)
+        })
+    })
+    return(
+        <div>
+            <h1>Students Data</h1>
+            {loading && <p>loading..</p>}
+            {error && <p>Error...</p>}
+            <ul>
+                {students.map(student=>(
+                    <li
+                    key={student.id}
+                    >
+                    <strong>Name</strong>
+                    {student.name}
+                    <br>
+                    </br>
+                    {student.age}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+export default App
+```

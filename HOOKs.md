@@ -120,3 +120,54 @@ const App=()=>{
 }
 export default App
 ```
+# Clock Timer using Hooks
+```jsx
+import React, { useState, useEffect } from 'react';
+import './kaif.css';
+
+const App = () => {
+  const [elapsedTime, setElapsedTime] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
+  let timerID = null;
+
+  useEffect(() => {
+    if (isRunning) {
+      timerID = setInterval(() => {
+        setElapsedTime((prevElapsedTime) => prevElapsedTime + 1);
+      }, 1000);
+    }
+    return () => clearInterval(timerID);
+  }, [isRunning]);
+
+  const start = () => {
+    if (!isRunning) {
+      setIsRunning(true);
+    }
+  };
+
+  const stop = () => {
+    if (isRunning) {
+      clearInterval(timerID);
+      setIsRunning(false);
+    }
+  };
+
+  const reset = () => {
+    stop();
+    setElapsedTime(0);
+  };
+
+  return (
+    <div className="App">
+      <h1>Timer</h1>
+      <div>Elapsed Time: {elapsedTime} seconds</div>
+      <button onClick={start}>Start</button>
+      <button onClick={stop}>Stop</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+  );
+};
+
+export default App;
+
+```

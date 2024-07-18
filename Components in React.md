@@ -2,8 +2,7 @@
 Functional components are simpler and rely on functions to define the component:
 
 ```jsx
-Copy code
-// FunctionalComponent.jsx
+
 
 import React from 'react';
 
@@ -45,8 +44,7 @@ You can compose components together to create more complex UIs:
 ```jsx
 
 import React from 'react';
-import FunctionalComponent from './FunctionalComponent';
-import ClassComponent from './ClassComponent';
+
 
 const ParentComponent = () => {
   return (

@@ -37,6 +37,7 @@ export default FunctionComponents;
 ```
 
 # Searching in list by names 
+## using filter methord or state
 ```jsx
 import React, { Component } from 'react';
 

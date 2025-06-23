@@ -35,7 +35,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 3  | Factorial Calculator     | Calculates factorial of a number            | ✅ Done  |     https://github.com/kaif21-cmd/React_/blob/main/factorial.md                   |
 | 4  | Addition of Two Numbers  | Adds two input numbers                      | ⬜ To Do |     https://github.com/kaif21-cmd/React_/blob/main/addition.md                |
 | 5  | Cube Calculator          | Calculates the cube of a number             | ⬜ To Do |                     |
-| 6  | Simple Counter           | Increment and decrement a number            | ⬜ To Do |                     |
+| 6  | Simple Counter           | Increment and decrement a number            | ⬜ To Do |      https://github.com/kaif21-cmd/React_/blob/main/counterproject.md               |
 | 7  | Age Checker              | Checks if a person is minor or adult        | ⬜ To Do |                     |
 | 8  | Temperature Converter    | Convert °C to °F or °F to °C                | ⬜ To Do |                     |
 | 9  | Palindrome Checker       | Checks if input is a palindrome             | ⬜ To Do |                     |

@@ -30,9 +30,9 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 
 | #  | Project Name             | Description                                 | Status   | Link / Notes        |
 |----|--------------------------|---------------------------------------------|----------|---------------------|
-| 1  | Square Calculator        | Calculates the square of a number           | ✅ Done  |    https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md                 |
-| 2  | Even/Odd Checker         | Checks whether a number is even or odd      | ✅ Done  |     https://github.com/kaif21-cmd/React_/blob/main/factorial.md                |
-| 3  | Factorial Calculator     | Calculates factorial of a number            | ✅ Done  |                     |
+| 1  | Square Calculator        | Calculates the square of a number           | ✅ Done  |             https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md        |
+| 2  | Even/Odd Checker         | Checks whether a number is even or odd      | ✅ Done  |     https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md               |
+| 3  | Factorial Calculator     | Calculates factorial of a number            | ✅ Done  |     https://github.com/kaif21-cmd/React_/blob/main/factorial.md                   |
 | 4  | Addition of Two Numbers  | Adds two input numbers                      | ⬜ To Do |                     |
 | 5  | Cube Calculator          | Calculates the cube of a number             | ⬜ To Do |                     |
 | 6  | Simple Counter           | Increment and decrement a number            | ⬜ To Do |                     |

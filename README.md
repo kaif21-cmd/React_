@@ -44,7 +44,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 
 | # | Project Name                 | Lifecycle Methods Used                          | 🔗 Link     |
 |---|------------------------------|--------------------------------------------------|-------------|
-| 1 | Student Fetcher              | `componentDidMount`                              | [🔗](#)      |
+| 1 | Student Fetcher              | `componentDidMount`                              | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md)      |
 | 2 | Timer Cleanup                | `componentDidMount`, `componentWillUnmount`      | [🔗](#)      |
 | 3 | Counter with Update Log      | `componentDidUpdate`                             | [🔗](#)      |
 | 4 | Error Boundary Demo          | `componentDidCatch`, `getDerivedStateFromError`  | [🔗](#)      |

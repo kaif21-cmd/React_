@@ -27,16 +27,16 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Day 19| Projects                          | [Projects]()                                       |
 
 # 📋 React Basic Projects (Class Components)
-| #  | Project                | Description                      | Status   | Link |
-|----|------------------------|----------------------------------|----------|------|
-| 1  | Square Calc            | Square of a number               | ✅ Done  | [Link](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
-| 2  | Even/Odd Checker       | Check even or odd                | ✅ Done  | [Link](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
-| 3  | Factorial Calc         | Factorial of a number            | ✅ Done  | [Link](https://github.com/kaif21-cmd/React_/blob/main/factorial.md) |
-| 4  | Addition               | Add two numbers                  | ✅ Done  | [Link](https://github.com/kaif21-cmd/React_/blob/main/addition.md) |
-| 5  | Cube Calc              | Cube of a number                 | ✅ Done  | [Link](https://github.com/kaif21-cmd/React_/blob/main/cube.md) |
-| 6  | Counter                | Increment/Decrement value        | ✅ Done  | [Link](https://github.com/kaif21-cmd/React_/blob/main/counterproject.md) |
-| 7  | Age Checker            | Check minor or adult             | ✅ Done  | [Link](https://github.com/kaif21-cmd/React_/blob/main/agecheker.md) |
-| 8  | Temp Converter         | °C ↔ °F conversion               | ✅ Done  | [Link](https://github.com/kaif21-cmd/React_/blob/main/temperatureConverter.md) |
-| 9  | Palindrome Checker     | Check for palindrome             | ⬜ To Do | [Link](https://github.com/kaif21-cmd/React_/blob/main/palindromeChecker.md) |
-| 10 | SI Calculator          | Simple Interest calculation      | ⬜ To Do | [Link](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) |
+| #  | Project              | Description                  | Link |
+|----|----------------------|------------------------------|------|
+| 1  | Square Calc          | Square of a number           | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
+| 2  | Even/Odd Checker     | Check even or odd            | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
+| 3  | Factorial Calc       | Factorial of a number        | [🔗](https://github.com/kaif21-cmd/React_/blob/main/factorial.md) |
+| 4  | Addition             | Add two numbers              | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addition.md) |
+| 5  | Cube Calc            | Cube of a number             | [🔗](https://github.com/kaif21-cmd/React_/blob/main/cube.md) |
+| 6  | Counter              | Increment/Decrement          | [🔗](https://github.com/kaif21-cmd/React_/blob/main/counterproject.md) |
+| 7  | Age Checker          | Check minor or adult         | [🔗](https://github.com/kaif21-cmd/React_/blob/main/agecheker.md) |
+| 8  | Temp Converter       | °C ↔ °F conversion           | [🔗](https://github.com/kaif21-cmd/React_/blob/main/temperatureConverter.md) |
+| 9  | Palindrome Checker   | Check for palindrome         | [🔗](https://github.com/kaif21-cmd/React_/blob/main/palindromeChecker.md) |
+| 10 | SI Calculator        | Simple Interest calculator   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) |
 

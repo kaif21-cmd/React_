@@ -40,3 +40,15 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 9  | Palindrome Checker   | Check for palindrome         | [🔗](https://github.com/kaif21-cmd/React_/blob/main/palindromeChecker.md) |
 | 10 | SI Calculator        | Simple Interest calculator   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) |
 
+# React Component Lifecycle Projects
+
+| # | Project Name                 | Lifecycle Methods Used                          | 🔗 Link     |
+|---|------------------------------|--------------------------------------------------|-------------|
+| 1 | Student Fetcher              | `componentDidMount`                              | [🔗](#)      |
+| 2 | Timer Cleanup                | `componentDidMount`, `componentWillUnmount`      | [🔗](#)      |
+| 3 | Counter with Update Log      | `componentDidUpdate`                             | [🔗](#)      |
+| 4 | Error Boundary Demo          | `componentDidCatch`, `getDerivedStateFromError`  | [🔗](#)      |
+| 5 | Props Logger                 | `getDerivedStateFromProps`                       | [🔗](#)      |
+| 6 | Visibility Toggle            | `shouldComponentUpdate`                          | [🔗](#)      |
+| 7 | Scroll Tracker               | `componentDidMount`, `componentWillUnmount`      | [🔗](#)      |
+

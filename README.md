@@ -45,7 +45,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Project Name         | Lifecycle Focus        | 🔗 Link |
 |----------------------|------------------------|--------|
 | API Integrate Student| `componentDidMount`    | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
-| Joke API             | `componentDidMount`    | [🔗](#) |
+| Joke API             | `componentDidMount`    | [🔗](https://github.com/kaif21-cmd/React_/blob/main/jokes.md) |
 | Product API          | `componentDidMount`, `shouldComponentUpdate`, `componentDidUpdate` | [🔗](#) |
 | Warning Project      | `shouldComponentUpdate`| [🔗](#) |
 

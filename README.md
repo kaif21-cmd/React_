@@ -42,4 +42,10 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 
 # React Component Lifecycle Projects
 
+| Project Name         | Lifecycle Focus        | 🔗 Link |
+|----------------------|------------------------|--------|
+| API Integrate Student| `componentDidMount`    | [🔗](#) |
+| Joke API             | `componentDidMount`    | [🔗](#) |
+| Product API          | `componentDidMount`, `shouldComponentUpdate`, `componentDidUpdate` | [🔗](#) |
+| Warning Project      | `shouldComponentUpdate`| [🔗](#) |
 

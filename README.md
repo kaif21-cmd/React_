@@ -49,4 +49,5 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Warning Project           | `shouldComponentUpdate`                                      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/warningproject.md) |
 | Checkout Cart System      | `componentDidMount`, `componentDidUpdate`                    | [🔗](https://github.com/kaif21-cmd/React_/blob/main/checkout.md) |
 | Add to Cart | `componentDidMount`, `setState` logic, `favorites` handling | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addtocart.md) |
+| All Func | `componentDidMount`, `setState` logic, `favorites` handling | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addtocart.md) |
 

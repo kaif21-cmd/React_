@@ -38,7 +38,9 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 7  | Age Checker          | Check minor or adult         | [🔗](https://github.com/kaif21-cmd/React_/blob/main/agecheker.md) |
 | 8  | Temp Converter       | °C ↔ °F conversion           | [🔗](https://github.com/kaif21-cmd/React_/blob/main/temperatureConverter.md) |
 | 9  | Palindrome Checker   | Check for palindrome         | [🔗](https://github.com/kaif21-cmd/React_/blob/main/palindromeChecker.md) |
-| 10 | SI Calculator        | Simple Interest calculator   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) |
+| 10 | SI Calculator        | Simple Interest calculator   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) | 
+| 11 | in range        | in range of  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) | 
+
 
 # React Component Lifecycle Projects
 | Project Name              | Lifecycle Focus                                               | 🔗 Link |

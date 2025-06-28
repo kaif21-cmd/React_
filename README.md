@@ -40,8 +40,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 9  | Palindrome Checker   | Check for palindrome         | [🔗](https://github.com/kaif21-cmd/React_/blob/main/palindromeChecker.md) |
 | 10 | SI Calculator        | Simple Interest calculator   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) | 
 | 11 | in range        | in range of  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) | 
-
-| 12 | Password validator       |   | [🔗](https://github.com/kaif21-cmd/React_/tree/main) | 
+| 12 | password validator        | in range of  | [🔗](https://github.com/kaif21-cmd/React_/tree/main) | 
 
 
 # ✅ React Component Lifecycle Projects

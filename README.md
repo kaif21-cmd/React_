@@ -53,7 +53,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Checkout Cart System      | `componentDidMount`, `componentDidUpdate`                    | [🔗](https://github.com/kaif21-cmd/React_/blob/main/checkout.md) |
 | Add to Cart               | `componentDidMount`, `setState` logic, `favorites` handling   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addtocart.md) |
 | All Func                  | `componentDidMount`, `setState` logic, `favorites` handling   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/allfunc.md) |
-| Searching API             | `componentDidMount`, `setState`, filter logic                | [🔗](https://github.com/kaif21-cmd/React_/blob/main/searchingapi.md) |
+| Searching API             | `componentDidMount`, `setState`, filter logic                | [🔗](https://github.com/kaif21-cmd/React_/blob/main/serachingapi.md) |
 | Student Repo              | `componentDidMount`, search by ID/Name, pagination            | [🔗](https://github.com/kaif21-cmd/React_/blob/main/student_repo.md) |
 
 

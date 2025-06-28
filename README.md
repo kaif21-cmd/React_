@@ -41,7 +41,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 10 | SI Calculator        | Simple Interest calculator   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) | 
 | 11 | in range        | in range of  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) | 
 | 12 | password validator        | [#$%^&*]  | [🔗](https://github.com/kaif21-cmd/React_/tree/main) | 
-| 13 | Todo       | Todo create , delete  | [🔗](https://github.com/kaif21-cmd/React_/tree/main) | 
+| 13 | Todo       | Todo create , delete  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/todo.md) | 
 
 
 

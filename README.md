@@ -47,16 +47,15 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 
 # ✅ React Component Lifecycle Projects
 
-| Project Name              | Lifecycle Focus                                               | 🔗 Link |
-|---------------------------|---------------------------------------------------------------|--------|
-| API Integrate Student     | `componentDidMount`                                           | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
-| Joke API                  | `componentDidMount`                                           | [🔗](https://github.com/kaif21-cmd/React_/blob/main/jokes.md) |
-| Product API               | `componentDidMount`, `shouldComponentUpdate`, `componentDidUpdate` | [🔗](https://github.com/kaif21-cmd/React_/blob/main/product.md) |
-| Warning Project           | `shouldComponentUpdate`                                      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/warningproject.md) |
-| Checkout Cart System      | `componentDidMount`, `componentDidUpdate`                    | [🔗](https://github.com/kaif21-cmd/React_/blob/main/checkout.md) |
-| Add to Cart               | `componentDidMount`, `setState` logic, `favorites` handling   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addtocart.md) |
-| All Func                  | `componentDidMount`, `setState` logic, `favorites` handling   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/allfunc.md) |
-| Searching API             | `componentDidMount`, `setState`, filter logic                | [🔗](https://github.com/kaif21-cmd/React_/blob/main/serachingapi.md) |
-| Student Repo              | `componentDidMount`, search by ID/Name, pagination            | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studnet_repo.md) |
-
+| No. | Project Name           | Lifecycle Focus                                                   | 🔗 Link |
+|-----|------------------------|--------------------------------------------------------------------|--------|
+| 1   | API Integrate Student | `componentDidMount`                                               | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
+| 2   | Joke API              | `componentDidMount`                                               | [🔗](https://github.com/kaif21-cmd/React_/blob/main/jokes.md) |
+| 3   | Product API           | `componentDidMount`, `shouldComponentUpdate`, `componentDidUpdate`| [🔗](https://github.com/kaif21-cmd/React_/blob/main/product.md) |
+| 4   | Warning Project       | `shouldComponentUpdate`                                           | [🔗](https://github.com/kaif21-cmd/React_/blob/main/warningproject.md) |
+| 5   | Checkout Cart System  | `componentDidMount`, `componentDidUpdate`                         | [🔗](https://github.com/kaif21-cmd/React_/blob/main/checkout.md) |
+| 6   | Add to Cart           | `componentDidMount`, `setState` logic, `favorites` handling        | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addtocart.md) |
+| 7   | All Func              | `componentDidMount`, `setState` logic, `favorites` handling        | [🔗](https://github.com/kaif21-cmd/React_/blob/main/allfunc.md) |
+| 8   | Searching API         | `componentDidMount`, `setState`, filter logic                     | [🔗](https://github.com/kaif21-cmd/React_/blob/main/serachingapi.md) |
+| 9   | Student Repo          | `componentDidMount`, search by ID/Name, pagination                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studnet_repo.md) |
 

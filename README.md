@@ -42,7 +42,8 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 11 | in range        | in range of  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) | 
 
 
-# React Component Lifecycle Projects
+# ✅ React Component Lifecycle Projects
+
 | Project Name              | Lifecycle Focus                                               | 🔗 Link |
 |---------------------------|---------------------------------------------------------------|--------|
 | API Integrate Student     | `componentDidMount`                                           | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
@@ -50,6 +51,9 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Product API               | `componentDidMount`, `shouldComponentUpdate`, `componentDidUpdate` | [🔗](https://github.com/kaif21-cmd/React_/blob/main/product.md) |
 | Warning Project           | `shouldComponentUpdate`                                      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/warningproject.md) |
 | Checkout Cart System      | `componentDidMount`, `componentDidUpdate`                    | [🔗](https://github.com/kaif21-cmd/React_/blob/main/checkout.md) |
-| Add to Cart | `componentDidMount`, `setState` logic, `favorites` handling | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addtocart.md) |
-| All Func | `componentDidMount`, `setState` logic, `favorites` handling | [🔗](https://github.com/kaif21-cmd/React_/blob/main/allfunc.md) |
+| Add to Cart               | `componentDidMount`, `setState` logic, `favorites` handling   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addtocart.md) |
+| All Func                  | `componentDidMount`, `setState` logic, `favorites` handling   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/allfunc.md) |
+| Searching API             | `componentDidMount`, `setState`, filter logic                | [🔗](https://github.com/kaif21-cmd/React_/blob/main/searchingapi.md) |
+| Student Repo              | `componentDidMount`, search by ID/Name, pagination            | [🔗](https://github.com/kaif21-cmd/React_/blob/main/student_repo.md) |
+
 

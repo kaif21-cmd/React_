@@ -44,7 +44,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 13 | Todo App             | Create and delete tasks                | [🔗](https://github.com/kaif21-cmd/React_/blob/main/todo.md) |
 | 14 | Word Calculator      | Count words and letters in input       | [🔗](https://github.com/kaif21-cmd/React_/blob/main/wordscalc.md) |
 | 15 | Quote Generator      | Generate random quotes using API       | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Quotegenrator.md) | 
-| 15 | BMI Calculator     | take height and weight     | [🔗](https://github.com/kaif21-cmd/React_/blob/main/bmi.md) |
+| 15 | BMI Calculator     | Give BMI value    | [🔗](https://github.com/kaif21-cmd/React_/blob/main/bmi.md) |
 
 
 

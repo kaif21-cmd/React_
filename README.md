@@ -27,21 +27,24 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | Day 19| Projects                          | [Projects]()                                       |
 
 # 📋 React Basic Projects (Class Components)
-| #  | Project              | Description                  | Link |
-|----|----------------------|------------------------------|------|
-| 1  | Square Calc          | Square of a number           | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
-| 2  | Even/Odd Checker     | Check even or odd            | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
-| 3  | Factorial Calc       | Factorial of a number        | [🔗](https://github.com/kaif21-cmd/React_/blob/main/factorial.md) |
-| 4  | Addition             | Add two numbers              | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addition.md) |
-| 5  | Cube Calc            | Cube of a number             | [🔗](https://github.com/kaif21-cmd/React_/blob/main/cube.md) |
-| 6  | Counter              | Increment/Decrement          | [🔗](https://github.com/kaif21-cmd/React_/blob/main/counterproject.md) |
-| 7  | Age Checker          | Check minor or adult         | [🔗](https://github.com/kaif21-cmd/React_/blob/main/agecheker.md) |
-| 8  | Temp Converter       | °C ↔ °F conversion           | [🔗](https://github.com/kaif21-cmd/React_/blob/main/temperatureConverter.md) |
-| 9  | Palindrome Checker   | Check for palindrome         | [🔗](https://github.com/kaif21-cmd/React_/blob/main/palindromeChecker.md) |
-| 10 | SI Calculator        | Simple Interest calculator   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) | 
-| 11 | in range        | in range of  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) | 
-| 12 | password validator        | [#$%^&*]  | [🔗](https://github.com/kaif21-cmd/React_/tree/main) | 
-| 13 | Todo       | Todo create , delete  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/todo.md) | 
+| #  | Project              | Description                            | Link |
+|----|----------------------|----------------------------------------|------|
+| 1  | Square Calc          | Square of a number                     | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
+| 2  | Even/Odd Checker     | Check even or odd                      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
+| 3  | Factorial Calc       | Factorial of a number                  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/factorial.md) |
+| 4  | Addition             | Add two numbers                        | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addition.md) |
+| 5  | Cube Calc            | Cube of a number                       | [🔗](https://github.com/kaif21-cmd/React_/blob/main/cube.md) |
+| 6  | Counter              | Increment/Decrement                    | [🔗](https://github.com/kaif21-cmd/React_/blob/main/counterproject.md) |
+| 7  | Age Checker          | Check minor or adult                   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/agecheker.md) |
+| 8  | Temp Converter       | °C ↔ °F conversion                     | [🔗](https://github.com/kaif21-cmd/React_/blob/main/temperatureConverter.md) |
+| 9  | Palindrome Checker   | Check for palindrome                   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/palindromeChecker.md) |
+| 10 | SI Calculator        | Simple Interest calculator             | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) |
+| 11 | In Range             | Check if a number is in a range        | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) |
+| 12 | Password Validator   | Check password for special characters  | [🔗](https://github.com/kaif21-cmd/React_/tree/main) |
+| 13 | Todo App             | Create and delete tasks                | [🔗](https://github.com/kaif21-cmd/React_/blob/main/todo.md) |
+| 14 | Word Calculator      | Count words and letters in input       | [🔗](https://github.com/kaif21-cmd/React_/blob/main/wordCounter.md) |
+| 15 | Quote Generator      | Generate random quotes using API       | [🔗](https://github.com/kaif21-cmd/React_/blob/main/quoteGenerator.md) |
+
 
 
 

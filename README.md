@@ -40,7 +40,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 9  | Palindrome Checker   | Check for palindrome                   | [🔗](https://github.com/kaif21-cmd/React_/blob/main/palindromeChecker.md) |
 | 10 | SI Calculator        | Simple Interest calculator             | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) |
 | 11 | In Range             | Check if a number is in a range        | [🔗](https://github.com/kaif21-cmd/React_/blob/main/simpleInterestCalc.md) |
-| 12 | Password Validator   | Check password for special characters  | [🔗](https://github.com/kaif21-cmd/React_/tree/main) |
+| 12 | Password Validator   | Check password for special characters  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/passwordvalidator.md) |
 | 13 | Todo App             | Create and delete tasks                | [🔗](https://github.com/kaif21-cmd/React_/blob/main/todo.md) |
 | 14 | Word Calculator      | Count words and letters in input       | [🔗](https://github.com/kaif21-cmd/React_/blob/main/wordscalc.md) |
 | 15 | Quote Generator      | Generate random quotes using API       | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Quotegenrator.md) | 

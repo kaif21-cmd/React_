@@ -1,13 +1,12 @@
 ```jsx
-import React, { Component } from "react";
+const { Component } = require("react");
 
-class PasswordValidator extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      password: "",
-      isValid: false,
-      message: ""
+      password: '',
+      message: ''
     };
   }
 
@@ -18,41 +17,39 @@ class PasswordValidator extends Component {
     const hasNumber = /[0-9]/.test(password);
     const hasSpecial = /[!@#$%^&*]/.test(password);
 
-    if (!minLength) return "Password must be at least 8 characters";
-    if (!hasUpper) return "Must include an uppercase letter";
-    if (!hasLower) return "Must include a lowercase letter";
-    if (!hasNumber) return "Must include a number";
-    if (!hasSpecial) return "Must include a special character";
+    if (!minLength) return "Password must include at least 8 characters";
+    if (!hasUpper) return "Password must include an uppercase letter";
+    if (!hasLower) return "Password must include a lowercase letter";
+    if (!hasNumber) return "Password must include a number";
+    if (!hasSpecial) return "Password must include a special character";
 
-    return "Valid Password";
+    return "Password is valid";
   };
 
   handleChange = (e) => {
-    const password = e.target.value;
-    const message = this.validatePassword(password);
-    const isValid = message === "Valid Password";
-    this.setState({ password, message, isValid });
+    const { name, value } = e.target;
+    const message = this.validatePassword(value);
+    this.setState({ [name]: value, message });
   };
 
   render() {
-    const { password, message, isValid } = this.state;
-
     return (
-      <div style={{ padding: "20px", maxWidth: "400px", margin: "auto" }}>
+      <div style={{ padding: "20px" }}>
         <h2>Password Validator</h2>
         <input
           type="password"
-          value={password}
-          onChange={this.handleChange}
+          name="password"
           placeholder="Enter password"
-          style={{ width: "100%", padding: "8px", marginBottom: "10px" }}
+          value={this.state.password}
+          onChange={this.handleChange}
+          style={{ padding: "5px", width: "200px" }}
         />
-        <p style={{ color: isValid ? "green" : "red" }}>{message}</p>
+        <p>{this.state.message}</p>
       </div>
     );
   }
 }
 
-export default PasswordValidator;
+export default App;
 
 ```

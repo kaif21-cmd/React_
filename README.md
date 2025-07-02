@@ -1,7 +1,6 @@
 # React Learning Journey
 
 Welcome to my React Learning Journey! This repository contains my daily progress and topics covered from Day 1 to Day 20. Each day includes links to the specific files and topics I worked on.
-
 ## Table of Contents
 
 | Day  | Topic                              | Link                                                                                          |

@@ -28,7 +28,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 # 📋 React Basic Projects (Class Components)
 | #  | Project              | Description                            | Link |
 |----|----------------------|----------------------------------------|------|
-| 1  | Square Calc          | Square of a number                     | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
+| 1  | Square Calc          | Square of a number                     | [🔗](https://github.com/kaif21-cmd/React_/blob/main/sqaure.md) |
 | 2  | Even/Odd Checker     | Check even or odd                      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/Even_Odd.md) |
 | 3  | Factorial Calc       | Factorial of a number                  | [🔗](https://github.com/kaif21-cmd/React_/blob/main/factorial.md) |
 | 4  | Addition             | Add two numbers                        | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addition.md) |

@@ -64,20 +64,22 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 
 # React Hooks Projects
 
-| #  | Project Title               | Description                                           | Hook(s) Used             | Link                                |
-|----|-----------------------------|-------------------------------------------------------|--------------------------|-------------------------------------|
-| 1  | Counter App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
-| 2  | Addition App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
-| 3  | factroial App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
-| 4  | Age checker App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
-| 5  | Even_odd checker                  | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
-| 6 | Temperature Converter       | Converts Celsius to Fahrenheit and vice versa         | useState                 | [🔗](https://github.com/yourname/temp-converter) |
-| 7  | Live Clock                  | Displays current time, updates every second           | useEffect, useState      | [🔗](https://github.com/yourname/live-clock) |
-| 8  | Todo List                   | Add and remove tasks                                  | useState                 | [🔗](https://github.com/yourname/todo-list) |
-| 9  | Fetch API Data              | Displays data from API using `fetch`                  | useEffect, useState      | [🔗](https://github.com/yourname/fetch-api-data) |
-| 10  | Show/Hide Toggle            | Toggle the visibility of text or component            | useState                 | [🔗](https://github.com/yourname/show-hide-toggle) |
-| 11 | Theme Switcher              | Light/Dark theme toggle                               | useState                 | [🔗](https://github.com/yourname/theme-switcher) |
-| 12 | Form Validation             | Handles and validates input forms                     | useState                 | [🔗](https://github.com/yourname/form-validation) |
-| 13  | Online Status Detector      | Detects if user is online or offline                  | useEffect, useState      | [🔗](https://github.com/yourname/online-status) |
-| 14 | Scroll Position Tracker     | Displays scroll position of the page                  | useEffect, useState      | [🔗](https://github.com/yourname/scroll-tracker) |
+# React Projects using useState and useEffect
+
+| #  | Project Title              | Description                                           | Hook(s) Used             | Link                                                                 |
+|----|----------------------------|-------------------------------------------------------|--------------------------|----------------------------------------------------------------------|
+| 1  | Counter App                | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/counter.md)      |
+| 2  | Addition App               | Adds two numbers and shows the result                 | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/addition.md)     |
+| 3  | Factorial App              | Calculates factorial of a given number                | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/factorial.md)    |
+| 4  | Age Checker App            | Checks if age is above 18 or not                      | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/agechecker.md)   |
+| 5  | Even/Odd Checker           | Checks whether the number is even or odd              | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/evenodd.md)      |
+| 6  | Temperature Converter      | Converts Celsius to Fahrenheit and vice versa         | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/tempconvert.md)  |
+| 7  | Live Clock                 | Displays current time and updates every second        | useEffect, useState      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/liveclock.md)    |
+| 8  | Todo List                  | Add, mark complete, and delete tasks                  | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/todolist.md)     |
+| 9  | Fetch API Data             | Fetches and displays user data from API               | useEffect, useState      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/fetchdata.md)    |
+| 10 | Show/Hide Toggle           | Toggle visibility of an element or section            | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/toggle.md)       |
+| 11 | Theme Switcher             | Switches between light and dark themes                | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/themeswitcher.md)|
+| 12 | Form Validation            | Validates user input in a form                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/formvalidation.md)|
+| 13 | Online Status Detector     | Detects user's internet connection status             | useEffect, useState      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/onlinestatus.md) |
+| 14 | Scroll Position Tracker    | Tracks and displays scroll position on the page       | useEffect, useState      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/scrolltracker.md)|
 

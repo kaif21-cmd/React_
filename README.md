@@ -67,13 +67,17 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | #  | Project Title               | Description                                           | Hook(s) Used             | Link                                |
 |----|-----------------------------|-------------------------------------------------------|--------------------------|-------------------------------------|
 | 1  | Counter App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
-| 2  | Temperature Converter       | Converts Celsius to Fahrenheit and vice versa         | useState                 | [🔗](https://github.com/yourname/temp-converter) |
-| 3  | Live Clock                  | Displays current time, updates every second           | useEffect, useState      | [🔗](https://github.com/yourname/live-clock) |
-| 4  | Todo List                   | Add and remove tasks                                  | useState                 | [🔗](https://github.com/yourname/todo-list) |
-| 5  | Fetch API Data              | Displays data from API using `fetch`                  | useEffect, useState      | [🔗](https://github.com/yourname/fetch-api-data) |
-| 6  | Show/Hide Toggle            | Toggle the visibility of text or component            | useState                 | [🔗](https://github.com/yourname/show-hide-toggle) |
-| 7  | Theme Switcher              | Light/Dark theme toggle                               | useState                 | [🔗](https://github.com/yourname/theme-switcher) |
-| 8  | Form Validation             | Handles and validates input forms                     | useState                 | [🔗](https://github.com/yourname/form-validation) |
-| 9  | Online Status Detector      | Detects if user is online or offline                  | useEffect, useState      | [🔗](https://github.com/yourname/online-status) |
-| 10 | Scroll Position Tracker     | Displays scroll position of the page                  | useEffect, useState      | [🔗](https://github.com/yourname/scroll-tracker) |
+| 2  | Addition App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
+| 3  | factroial App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
+| 4  | Age checker App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
+| 5  | Even_odd checker                  | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
+| 6 | Temperature Converter       | Converts Celsius to Fahrenheit and vice versa         | useState                 | [🔗](https://github.com/yourname/temp-converter) |
+| 7  | Live Clock                  | Displays current time, updates every second           | useEffect, useState      | [🔗](https://github.com/yourname/live-clock) |
+| 8  | Todo List                   | Add and remove tasks                                  | useState                 | [🔗](https://github.com/yourname/todo-list) |
+| 9  | Fetch API Data              | Displays data from API using `fetch`                  | useEffect, useState      | [🔗](https://github.com/yourname/fetch-api-data) |
+| 10  | Show/Hide Toggle            | Toggle the visibility of text or component            | useState                 | [🔗](https://github.com/yourname/show-hide-toggle) |
+| 11 | Theme Switcher              | Light/Dark theme toggle                               | useState                 | [🔗](https://github.com/yourname/theme-switcher) |
+| 12 | Form Validation             | Handles and validates input forms                     | useState                 | [🔗](https://github.com/yourname/form-validation) |
+| 13  | Online Status Detector      | Detects if user is online or offline                  | useEffect, useState      | [🔗](https://github.com/yourname/online-status) |
+| 14 | Scroll Position Tracker     | Displays scroll position of the page                  | useEffect, useState      | [🔗](https://github.com/yourname/scroll-tracker) |
 

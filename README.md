@@ -66,7 +66,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 
 | #  | Project Title               | Description                                           | Hook(s) Used             | Link                                |
 |----|-----------------------------|-------------------------------------------------------|--------------------------|-------------------------------------|
-| 1  | Counter App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/yourname/counter-app) |
+| 1  | Counter App                 | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/studentsfetcher.md) |
 | 2  | Temperature Converter       | Converts Celsius to Fahrenheit and vice versa         | useState                 | [🔗](https://github.com/yourname/temp-converter) |
 | 3  | Live Clock                  | Displays current time, updates every second           | useEffect, useState      | [🔗](https://github.com/yourname/live-clock) |
 | 4  | Todo List                   | Add and remove tasks                                  | useState                 | [🔗](https://github.com/yourname/todo-list) |

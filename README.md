@@ -73,7 +73,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 3  | Factorial App              | Calculates factorial of a given number                | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/factorial.md)    |
 | 4  | Age Checker App            | Checks if age is above 18 or not                      | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/agechecker.md)   |
 | 5  | Even/Odd Checker           | Checks whether the number is even or odd              | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/even_odd_useState.md)      |
-| 6  | Temperature Converter      | Converts Celsius to Fahrenheit and vice versa         | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/tempconvert.md)  |
+| 6  | Temperature Converter      | Converts Celsius to Fahrenheit and vice versa         | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/tempconverter_useState.md)  |
 | 7  | Live Clock                 | Displays current time and updates every second        | useEffect, useState      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/liveclock.md)    |
 | 8  | Todo List                  | Add, mark complete, and delete tasks                  | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/todolist.md)     |
 | 9  | Fetch API Data             | Fetches and displays user data from API               | useEffect, useState      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/fetchdata.md)    |

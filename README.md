@@ -70,7 +70,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 |----|----------------------------|-------------------------------------------------------|--------------------------|----------------------------------------------------------------------|
 | 1  | Counter App                | Increments/decrements a number                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/counter.md)      |
 | 2  | Addition App               | Adds two numbers and shows the result                 | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/add_usestate.md)     |
-| 3  | Factorial App              | Calculates factorial of a given number                | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/factorial.md)    |
+| 3  | Factorial App              | Calculates factorial of a given number                | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/fact_usestate.md)    |
 | 4  | Age Checker App            | Checks if age is above 18 or not                      | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/agechecker.md)   |
 | 5  | Even/Odd Checker           | Checks whether the number is even or odd              | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/even_odd_useState.md)      |
 | 6  | Temperature Converter      | Converts Celsius to Fahrenheit and vice versa         | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/tempconverter_useState.md)  |

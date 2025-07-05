@@ -76,7 +76,7 @@ Welcome to my React Learning Journey! This repository contains my daily progress
 | 6  | Temperature Converter      | Converts Celsius to Fahrenheit and vice versa         | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/tempconverter_useState.md)  |
 | 7  | Live Clock                 | Displays current time and updates every second        | useEffect, useState      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/liveclock.md)    |
 | 8  | Todo List                  | Add, mark complete, and delete tasks                  | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/todolist.md)     |
-| 9  | Fetch API Data             | Fetches and displays user data from API               | useEffect, useState      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/fetchdata.md)    |
+| 9  | Fetch API Data             | Fetches and displays user data from API               | useEffect, useState      | [🔗](https://github.com/kaif21-cmd/React_/blob/main/usersapi_setstate_seteffect.md)    |
 | 10 | Show/Hide Toggle           | Toggle visibility of an element or section            | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/toggle.md)       |
 | 11 | Theme Switcher             | Switches between light and dark themes                | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/themeswitcher.md)|
 | 12 | Form Validation            | Validates user input in a form                        | useState                 | [🔗](https://github.com/kaif21-cmd/React_/blob/main/formvalidation.md)|

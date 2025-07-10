@@ -1,32 +1,38 @@
 ```jsx
-import React, { Component } from 'react';
+const { useState } = require("react");
 
-class Counter extends Component {
-  state = { count: 0 };
+const App = () => {
+    const [count, setCount] = useState(0);
+    const [message, setMessage] = useState('');
 
-  increment = () => {
-    if (this.state.count < 10) {
-      this.setState({ count: this.state.count + 1 });
-    }
-  };
+    const increment = () => {
+        if (count >= 20) {
+            setMessage("The upper limit (20) is reached!");
+            return;
+        }
+        setCount(count + 1);
+        setMessage('');
+    };
 
-  decrement = () => {
-    if (this.state.count > 0) {
-      this.setState({ count: this.state.count - 1 });
-    }
-  };
+    const decrement = () => {
+        if (count <= 0) {
+            setMessage("Cannot go below 0!");
+            return;
+        }
+        setCount(count - 1);
+        setMessage('');
+    };
 
-  render() {
     return (
-      <div style={{ textAlign: 'center' }}>
-        <h2>Counter: {this.state.count}</h2>
-        <button onClick={this.increment} disabled={this.state.count >= 10}>+</button>
-        <button onClick={this.decrement} disabled={this.state.count <= 0}>-</button>
-      </div>
+        <div style={{ padding: "20px", fontFamily: "Arial" }}>
+            <button onClick={increment}>+1</button>
+            <button onClick={decrement} style={{ marginLeft: "10px" }}>-1</button>
+            <h1>{count}</h1>
+            {message && <p style={{ color: "red" }}>{message}</p>}
+        </div>
     );
-  }
-}
+};
 
-export default Counter;
+export default App;
 
 ```

@@ -40,3 +40,11 @@ const ImageSlider=()=>{
 }
 export default  ImageSlider;
 ```
+```jsx
+| `prev` | `(prev + 1)` | `(prev + 1) % 3` | Result         |
+| ------ | ------------ | ---------------- | -------------- |
+| 0      | 1            | 1                | Show img1      |
+| 1      | 2            | 2                | Show img2      |
+| 2      | 3            | 0                | Loop to img0 ✅ |
+
+```

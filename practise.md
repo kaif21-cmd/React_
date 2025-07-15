@@ -102,3 +102,38 @@ const buttonStyle = {
 export default App;
 
 ```
+
+# Name changer 
+```jsx
+import React, { useState } from "react";
+
+const Names = [
+  "kaif",
+  "shahrukh",
+  "zaid",
+  "zaeem",
+];
+
+const App = () => {
+  const [index, setIndex] = useState(0);
+
+  const Increment = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % Names.length);
+  };
+
+  const Decrement = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + Names.length) % Names.length);
+  };
+
+  return (
+    <div>
+      <h1>{Names[index]}</h1>
+      <button onClick={Increment}>Ageee</button>
+      <button onClick={Decrement}>Picheee</button>
+    </div>
+  );
+};
+
+export default App;
+
+```

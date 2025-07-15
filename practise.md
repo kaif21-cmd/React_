@@ -30,6 +30,73 @@ const App = () => {
       <button onClick={decrement}>Pichla Din</button>
     </div>
   );
+
+};
+
+export default App;
+
+```
+# Backgroud changer 
+```jsx
+import React, { useState } from "react";
+
+const days = [
+  { name: "Monday", color: "#f8b400" },
+  { name: "Tuesday", color: "#00b894" },
+  { name: "Wednesday", color: "#0984e3" },
+  { name: "Thursday", color: "#6c5ce7" },
+  { name: "Friday", color: "#fd79a8" },
+  { name: "Saturday", color: "#e17055" },
+  { name: "Sunday", color: "#d63031" },
+];
+
+const App = () => {
+  const [index, setIndex] = useState(0);
+
+  const Increment = () => {
+    setIndex((prev) => (prev + 1) % days.length);
+  };
+
+  const decrement = () => {
+    setIndex((prev) => (prev - 1 + days.length) % days.length);
+  };
+
+  const currentDay = days[index];
+
+  return (
+    <div
+      style={{
+        backgroundColor: currentDay.color,
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "#fff",
+        fontFamily: "Arial",
+        transition: "background-color 0.5s ease",
+      }}
+    >
+      <h1>{currentDay.name}</h1>
+      <div>
+        <button onClick={Increment} style={buttonStyle}>
+          Agla Din
+        </button>
+        <button onClick={decrement} style={buttonStyle}>
+          Pichla Din
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const buttonStyle = {
+  padding: "10px 20px",
+  margin: "0 10px",
+  fontSize: "16px",
+  borderRadius: "5px",
+  border: "none",
+  cursor: "pointer",
 };
 
 export default App;

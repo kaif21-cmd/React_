@@ -137,3 +137,90 @@ const App = () => {
 export default App;
 
 ```
+# API Changer
+```jsx
+import React, { useState } from "react";
+
+const people = [
+  {
+    id: 1,
+    info: {
+      name: "Kaif",
+      email: "kaif@example.com",
+      photo: "https://via.placeholder.com/150/3498db/ffffff?text=Kaif",
+    },
+  },
+  {
+    id: 2,
+    info: {
+      name: "Shahrukh",
+      email: "shahrukh@example.com",
+      photo: "https://via.placeholder.com/150/2ecc71/ffffff?text=SRK",
+    },
+  },
+  {
+    id: 3,
+    info: {
+      name: "Zaid",
+      email: "zaid@example.com",
+      photo: "https://via.placeholder.com/150/e74c3c/ffffff?text=Zaid",
+    },
+  },
+  {
+    id: 4,
+    info: {
+      name: "Zaeem",
+      email: "zaeem@example.com",
+      photo: "https://via.placeholder.com/150/9b59b6/ffffff?text=Zaeem",
+    },
+  },
+];
+
+const App = () => {
+  const [index, setIndex] = useState(0);
+
+  const Increment = () => {
+    setIndex((prev) => (prev + 1) % people.length);
+  };
+
+  const Decrement = () => {
+    setIndex((prev) => (prev - 1 + people.length) % people.length);
+  };
+
+  const current = people[index];
+
+  return (
+    <div style={{ textAlign: "center", fontFamily: "Arial" }}>
+      <img
+        src={current.info.photo}
+        alt={current.info.name}
+        style={{ borderRadius: "50%", width: "150px", marginBottom: "10px" }}
+      />
+      <h1>ID: {current.id}</h1>
+      <h2>Name: {current.info.name}</h2>
+      <p>Email: {current.info.email}</p>
+
+      <button onClick={Decrement} style={btnStyle}>
+        👈 Pichle
+      </button>
+      <button onClick={Increment} style={btnStyle}>
+        Agle 👉
+      </button>
+    </div>
+  );
+};
+
+const btnStyle = {
+  padding: "10px 15px",
+  margin: "10px",
+  fontSize: "16px",
+  borderRadius: "5px",
+  border: "none",
+  cursor: "pointer",
+  backgroundColor: "#3498db",
+  color: "#fff",
+};
+
+export default App;
+
+```

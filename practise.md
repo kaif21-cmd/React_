@@ -224,3 +224,45 @@ const btnStyle = {
 export default App;
 
 ```
+```jsx
+const { useState } = require("react")
+
+const App=()=>{
+  const [validate,setValidate]=useState('')
+  const [message,setMessage]=useState('')
+
+    const validate_paswrd=(value)=>{
+    const minlength=validate.length>=8;
+    const hasUpper=/[A-Z]/.test(validate)
+    const hasLower=/[a-z]/.test(validate)
+    const hasNumber=/[0-9]/.test(validate)
+    const hasSpecial=/[!@#$%^&*]/.test(validate)
+
+    if(!minlength) return setMessage('paswword must include at least 8 charcater')
+    if(!hasLower) return setMessage('password must include an uppercase letter')
+    if(!hasUpper) return setMessage('password must include upper')
+    if(!hasNumber) return setMessage('pasword must include number')
+    if(!hasSpecial) return setMessage('must include special character')
+    setMessage ('Pasword is valid')
+  }
+  const handelChange=(e)=>{
+    const value=e.target.value
+    setValidate(value)
+    validate_paswrd(value)
+  }
+  return(
+    <div>
+      <h1>Password Validator</h1>
+      <input
+      type="password"
+      value={validate}
+      onChange={handelChange}
+      placeholder="Enter the password"
+      >
+      </input>
+      <p>{message}</p>
+    </div>
+  )
+}
+export default App;
+```

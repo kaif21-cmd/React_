@@ -266,3 +266,58 @@ const App=()=>{
 }
 export default App;
 ```
+# Jokes API
+```jsx
+import React, { useState, useEffect } from "react";
+
+const App = () => {
+  const [jokes, setJokes] = useState([]);
+  const [currentIndex, setIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch("https://official-joke-api.appspot.com/jokes/ten") // Example API
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Error while fetching");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setJokes(data);
+        setLoading(false);
+        setIndex(0);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  const handleNext = () => {
+    setIndex((prev) => (prev + 1) % jokes.length);
+  };
+
+  const handlePrevious = () => {
+    setIndex((prev) => (prev - 1 + jokes.length) % jokes.length);
+  };
+
+  if (loading) return <h2>Loading...</h2>;
+  if (error) return <h2>{error}</h2>;
+
+  return (
+    <div style={{ textAlign: "center" }}>
+      <h2>Joke #{currentIndex + 1}</h2>
+      <h3>{jokes[currentIndex]?.setup}</h3>
+      <p>{jokes[currentIndex]?.punchline}</p>
+
+      <button onClick={handlePrevious}>Previous</button>
+      <button onClick={handleNext}>Next</button>
+    </div>
+  );
+};
+
+export default App;
+
+```

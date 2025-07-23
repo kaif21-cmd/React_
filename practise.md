@@ -321,3 +321,74 @@ const App = () => {
 export default App;
 
 ```
+
+# Codedamn  EMI calculator
+```jsx
+import React, { useState } from "react";
+
+const App = () => {
+  const [totalCost, setTotalCost] = useState('');
+  const [numberOfIntervals, setNumberOfIntervals] = useState('');
+  const [result, setResult] = useState(null);
+
+  // Handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    if (name === "totalCost") setTotalCost(value);
+    if (name === "numberOfIntervals") setNumberOfIntervals(value);
+  };
+
+  // Perform EMI calculation
+  const calculateEMI = () => {
+    const total = parseFloat(totalCost);
+    const intervals = parseInt(numberOfIntervals);
+
+    if (!isNaN(total) && !isNaN(intervals) && intervals > 0) {
+      const emi = total / intervals;
+      setResult(emi.toFixed(2)); // 2 decimal places
+    } else {
+      setResult("Invalid input");
+    }
+  };
+
+  return (
+    <div style={{ padding: '20px' }}>
+      <h2>EMI Calculator</h2>
+
+      {/* Challenge 1: Input Fields */}
+      <input
+        type="number"
+        id="totalCost"
+        name="totalCost"
+        placeholder="Total Loan Amount"
+        value={totalCost}
+        onChange={handleChange}
+      />
+      <br /><br />
+      <input
+        type="number"
+        id="numberOfIntervals"
+        name="numberOfIntervals"
+        placeholder="Number of Months"
+        value={numberOfIntervals}
+        onChange={handleChange}
+      />
+      <br /><br />
+
+      {/* Challenge 1: Button */}
+      <button id="calculate" onClick={calculateEMI}>
+        Calculate
+      </button>
+
+      <br /><br />
+
+      {/* Challenge 2: Output */}
+      <div id="output">
+        {result && <strong>Monthly EMI: ₹{result}</strong>}
+      </div>
+    </div>
+  );
+};
+
+export default App
+```

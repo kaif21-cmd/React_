@@ -392,3 +392,66 @@ const App = () => {
 
 export default App
 ```
+
+# Showing Data to tables
+```jsx
+import { useState, useEffect } from "react";
+
+export default function App() {
+  const [posts, setPosts] = useState([]);
+  const [page, setPage] = useState(1);
+
+  // Fetch and append posts
+  const fetchPosts = async (pageNum) => {
+    try {
+      const response = await fetch(
+        `https://jsonplaceholder.typicode.com/posts?_limit=10&_page=${pageNum}`
+      );
+      const data = await response.json();
+      setPosts((prevPosts) => [...prevPosts, ...data]); // Append new data
+    } catch (error) {
+      console.error("Error fetching posts:", error);
+    }
+  };
+
+  // Initial load
+  useEffect(() => {
+    fetchPosts(page);
+  }, [page]);
+
+  // Handle Next button
+  const handleNext = () => {
+    setPage((prevPage) => prevPage + 1);
+  };
+
+  return (
+    <div style={{ padding: "20px" }}>
+      <h2>Paginated Posts</h2>
+
+      <table border="1" cellPadding="10" cellSpacing="0">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Body</th>
+          </tr>
+        </thead>
+        <tbody>
+          {posts.map(({ id, title, body }) => (
+            <tr key={id}>
+              <td>{id}</td>
+              <td>{title}</td>
+              <td>{body}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <button id="next" onClick={handleNext} style={{ marginTop: "20px" }}>
+        Next Items
+      </button>
+    </div>
+  );
+}
+
+```

@@ -455,3 +455,77 @@ export default function App() {
 }
 
 ```
+
+# Another way
+```jsx
+import { useEffect, useState } from "react";
+
+const App = () => {
+  const [posts, setPosts] = useState([]);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch(`https://jsonplaceholder.typicode.com/posts?_limit=10&_page=${page}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Fetching error");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setPosts(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setLoading(false);
+        setError(error.message || "Failed to load");
+      });
+  }, [page]); // ✅ Now runs on every page change
+
+  const handleNext = () => {
+    setPage((prev) => prev + 1);
+  };
+
+  const handelPrevious=()=>{
+    setPage((prev)=>prev-1)
+  }
+  return (
+    <div style={{ padding: "20px" }}>
+      <h2>Posts (Page {page})</h2>
+      {loading && <p>Loading...</p>}
+      {error && <p style={{ color: "red" }}>Error: {error}</p>}
+
+      {!loading && !error && (
+        <table border="1" cellPadding="10">
+          <thead>
+            <tr>
+              <th>ID:</th>
+              <th>Title</th>
+              <th>Body</th>
+            </tr>
+          </thead>
+          <tbody>
+            {posts.map(({ id, title, body }) => (
+              <tr key={id}>
+                <td>{id}</td>
+                <td>{title}</td>
+                <td>{body}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+
+      <br />
+      <button onClick={handleNext}>Next Items</button>
+    <button onClick={handelPrevious}>prev Items</button>
+    </div>
+  );
+};
+
+export default App;
+
+```

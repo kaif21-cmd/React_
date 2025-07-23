@@ -1,4 +1,4 @@
-# FETCHING API BY SERCHINg
+# FETCHING API BY SERCHING
 ```jsx
 import React, { Component } from 'react';
 import './kaif.css'

@@ -529,3 +529,210 @@ const App = () => {
 export default App;
 
 ```
+
+# Student management Dashboard
+
+```jsx
+import React, { useState, useEffect } from "react";
+
+const App = () => {
+  const [search, setSearch] = useState("");
+  const [statusFilter, setStatusFilter] = useState("All");
+
+  const [students] = useState([
+    {
+      id: 1,
+      name: "Ayesha Khan",
+      age: 20,
+      branch: "Computer Science",
+      email: "ayesha.khan@example.com",
+      photo: "https://randomuser.me/api/portraits/women/44.jpg",
+      status: "Pass",
+    },
+    {
+      id: 2,
+      name: "Rohan Mehta",
+      age: 21,
+      branch: "Mechanical Engineering",
+      email: "rohan.mehta@example.com",
+      photo: "https://randomuser.me/api/portraits/men/32.jpg",
+      status: "Fail",
+    },
+    {
+      id: 3,
+      name: "Zoya Sheikh",
+      age: 19,
+      branch: "Electrical Engineering",
+      email: "zoya.sheikh@example.com",
+      photo: "https://randomuser.me/api/portraits/women/68.jpg",
+      status: "Pass",
+    },
+    {
+      id: 4,
+      name: "Adnan Qureshi",
+      age: 22,
+      branch: "IT",
+      email: "adnan.q@example.com",
+      photo: "https://randomuser.me/api/portraits/men/85.jpg",
+      status: "Fail",
+    },
+  ]);
+
+  const filteredStudents = students.filter((student) => {
+    const matchesSearch = `${student.name} ${student.branch} ${student.email}`
+      .toLowerCase()
+      .includes(search.toLowerCase());
+    const matchesStatus =
+      statusFilter === "All" || student.status === statusFilter;
+    return matchesSearch && matchesStatus;
+  });
+
+  // Inject responsive styles once on mount
+  useEffect(() => {
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @media (max-width: 768px) {
+        .table-container {
+          overflow-x: auto;
+        }
+        table {
+          width: 100%;
+        }
+        input, select {
+          width: 100% !important;
+          margin-bottom: 10px;
+        }
+        td img {
+          width: 40px !important;
+          height: 40px !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }, []);
+
+  const styles = {
+    container: {
+      padding: "20px",
+      fontFamily: "Segoe UI, sans-serif",
+    },
+    input: {
+      padding: "8px",
+      marginRight: "10px",
+      width: "250px",
+    },
+    select: {
+      padding: "8px",
+      marginRight: "10px",
+      width: "150px",
+    },
+    tableContainer: {
+      overflowX: "auto",
+    },
+    table: {
+      width: "100%",
+      borderCollapse: "collapse",
+      marginTop: "20px",
+      minWidth: "600px",
+    },
+    th: {
+      backgroundColor: "#007bff",
+      color: "white",
+      padding: "10px",
+      border: "1px solid #ddd",
+    },
+    td: {
+      padding: "10px",
+      border: "1px solid #ddd",
+      textAlign: "center",
+    },
+    img: {
+      borderRadius: "50%",
+      width: "50px",
+      height: "50px",
+    },
+    statusPass: {
+      color: "green",
+      fontWeight: "bold",
+    },
+    statusFail: {
+      color: "red",
+      fontWeight: "bold",
+    },
+  };
+
+  return (
+    <div style={styles.container}>
+      <h2>🎓 Student Dashboard</h2>
+
+      <div>
+        <input
+          type="text"
+          placeholder="Search by name, branch or email"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          style={styles.input}
+        />
+        <select
+          value={statusFilter}
+          onChange={(e) => setStatusFilter(e.target.value)}
+          style={styles.select}
+        >
+          <option value="All">All</option>
+          <option value="Pass">Pass</option>
+          <option value="Fail">Fail</option>
+        </select>
+      </div>
+
+      <div className="table-container" style={styles.tableContainer}>
+        <table style={styles.table}>
+          <thead>
+            <tr>
+              <th style={styles.th}>Photo</th>
+              <th style={styles.th}>Name</th>
+              <th style={styles.th}>Age</th>
+              <th style={styles.th}>Branch</th>
+              <th style={styles.th}>Email</th>
+              <th style={styles.th}>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredStudents.length > 0 ? (
+              filteredStudents.map((student) => (
+                <tr key={student.id}>
+                  <td style={styles.td}>
+                    <img src={student.photo} alt={student.name} style={styles.img} />
+                  </td>
+                  <td style={styles.td}>{student.name}</td>
+                  <td style={styles.td}>{student.age}</td>
+                  <td style={styles.td}>{student.branch}</td>
+                  <td style={styles.td}>{student.email}</td>
+                  <td
+                    style={{
+                      ...styles.td,
+                      ...(student.status === "Pass"
+                        ? styles.statusPass
+                        : styles.statusFail),
+                    }}
+                  >
+                    {student.status}
+                  </td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="6" style={styles.td}>
+                  No matching students found.
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+```

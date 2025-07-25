@@ -740,23 +740,55 @@ export default App;
 # Dynamic Counter
 
 ```jsx
-const { useState, useEffect } = require("react");
+import React, { useState, useEffect } from 'react';
 
-const [count,setCount]=useState(0)
-const [isRunning,setIsRunning]=useState(false)
+const CountUpTimer = () => {
+  const [count, setCount] = useState(0);
+  const [isRunning, setIsRunning] = useState(false);
 
-useEffect(()=>{
-  let timer;
-  if(isRunning && count<10){
-    timer=setInterval(()=>{
-      setCount((setCount+1))
-    })
-  }
-  if(count===10)
-  clearInterval(timer)
-  setIsRunning(false)
+  useEffect(() => {
+    let timer;
+    if (isRunning && count < 10) {
+      timer = setInterval(() => {
+        setCount((prev) => prev + 1);
+      }, 1000);
+    }
 
-  return ()=>clearInterval(timer)
-},[isRunning,count])
+    if (count === 10) {
+      clearInterval(timer);
+      setIsRunning(false);
+    }
+
+    return () => clearInterval(timer);
+  }, [isRunning, count]);
+
+  const startCountUp = () => {
+    setCount(0);        // Reset counter
+    setIsRunning(true); // Start timer
+  };
+
+  return (
+    <div style={styles.container}>
+      <h1>{count}</h1>
+      <button onClick={startCountUp} style={styles.button}>Start Timer</button>
+    </div>
+  );
+};
+
+const styles = {
+  container: {
+    textAlign: 'center',
+    marginTop: '100px',
+    fontFamily: 'Arial',
+  },
+  button: {
+    padding: '10px 20px',
+    fontSize: '16px',
+    marginTop: '10px',
+  },
+};
+
+export default CountUpTimer;
+
 
 ```

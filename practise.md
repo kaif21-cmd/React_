@@ -736,3 +736,27 @@ const App = () => {
 export default App;
 
 ```
+
+# Dynamic Counter
+
+```jsx
+const { useState, useEffect } = require("react");
+
+const [count,setCount]=useState(0)
+const [isRunning,setIsRunning]=useState(false)
+
+useEffect(()=>{
+  let timer;
+  if(isRunning && count<10){
+    timer=setInterval(()=>{
+      setCount((setCount+1))
+    })
+  }
+  if(count===10)
+  clearInterval(timer)
+  setIsRunning(false)
+
+  return ()=>clearInterval(timer)
+},[isRunning,count])
+
+```

@@ -792,3 +792,41 @@ export default CountUpTimer;
 
 
 ```
+
+```jsx
+// Step 1: Engagement calculator
+function calculateEngagement(likes, comments, shares) {
+  return likes + comments + shares;
+}
+
+// Step 2: Get top 5 engaging posts
+function getTopEngagingPosts(postData) {
+  return postData
+    .map(post => ({
+      ...post,
+      engagement: calculateEngagement(post.likes, post.comments, post.shares)
+    }))
+    .sort((a, b) => b.engagement - a.engagement)
+    .slice(0, 5)
+    .map(post => post.id);
+}
+
+// Sample Data
+const postData = [
+  { id: 1, likes: 100, comments: 20, shares: 5 },
+  { id: 2, likes: 50, comments: 10, shares: 2 },
+  { id: 3, likes: 200, comments: 30, shares: 10 },
+  { id: 4, likes: 80, comments: 15, shares: 3 },
+  { id: 5, likes: 150, comments: 25, shares: 7 },
+  { id: 6, likes: 120, comments: 18, shares: 4 },
+  { id: 7, likes: 90, comments: 12, shares: 2 },
+  { id: 8, likes: 180, comments: 28, shares: 9 },
+  { id: 9, likes: 130, comments: 22, shares: 6 },
+  { id: 10, likes: 160, comments: 26, shares: 8 }
+];
+
+// Call the function
+const topPosts = getTopEngagingPosts(postData);
+console.log(topPosts); // Output: [3, 8, 10, 5, 9]
+
+```

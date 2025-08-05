@@ -793,6 +793,8 @@ export default CountUpTimer;
 
 ```
 
+### E-commerce company, "EasyShop", has developed a React-based web application for its users to browse and purchase products online. The application contains a component named "ProductCard" that displays the product details, such as product name, price, and quantity. The "ProductCard" component is re-rendered whenever the user updates the quantity of the product. However, the development team has observed that the application is experiencing performance issues due to unnecessary re-renders of the "ProductCard" component. Your task is to suggest an approach to optimize the re-rendering of the "ProductCard" component using React's component lifecycle methods. Consider the scenario where the user updates the quantity of the product and the component needs to be re-rendered only when the quantity changes. How would you utilize React's component lifecycle methods to achieve this optimization?
+
 ```jsx
 // Step 1: Engagement calculator
 function calculateEngagement(likes, comments, shares) {

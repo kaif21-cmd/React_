@@ -832,3 +832,61 @@ const topPosts = getTopEngagingPosts(postData);
 console.log(topPosts); // Output: [3, 8, 10, 5, 9]
 
 ```
+
+# Sorting by price name rating 
+
+```jsx
+import React, { useState, useEffect } from 'react';
+
+function ProductList() {
+  const [products, setProducts] = useState([
+    { id: 1, name: 'Product 1', price: 10.99, rating: 4 },
+    { id: 2, name: 'Product 2', price: 5.99, rating: 3 },
+    { id: 3, name: 'Product 3', price: 7.99, rating: 5 },
+    // ...
+  ]);
+
+  const [sortOption,setsortOption]=useState('price');
+  useEffect(()=>{
+    let sortedProducts=[...products]
+    if(sortOption==='price'){
+        sortedProducts.sort((a,b)=>a.price-b.price)
+    }
+    else if(sortOption==='name'){
+        sortedProducts.sort((a,b)=>a.name.localeCompare(b.name))
+    }else if(sortOption==='rating'){
+        sortedProducts.sort((a,b)=>b.rating-a.rating)
+    }
+    setProducts(sortedProducts)
+  },[sortOption,products])
+return(
+    <div>
+        <select
+        value={sortOption}
+        onChange={(e)=>setsortOption(e.target.value)}
+        >
+        <option
+        value="price">sort by price
+        </option>
+        <option
+        value="name">
+        sort by name
+        </option>
+         <option
+        value="rating">
+        sort by rating
+        </option>
+        </select>
+        <ul>
+            {products.map((products)=>(
+                <li key={products.id}>
+                    {products.name} (${products.price})-{products.rating/5}
+                </li>
+            ))}
+        </ul>
+    </div>
+)
+}
+export default ProductList;
+
+```

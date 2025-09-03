@@ -1066,3 +1066,46 @@ const App = () => {
 export default App;
 
 ```
+# Polling System.
+```jsx
+import { useState } from "react";
+
+function PollComponent() {
+  const [votes, setVotes] = useState([0, 0, 0, 0]); // 4 options with initial votes = 0
+  const question = "Which is your favorite programming language?";
+  const options = ["JavaScript", "Python", "C++", "Java"];
+
+  const handleVote = (index) => {
+    const newVotes = [...votes];
+    newVotes[index] += 1; // increase vote count
+    setVotes(newVotes);
+  };
+
+  return (
+    <div>
+      {/* Challenge 1: Poll Question */}
+      <h4 id="question">{question}</h4>
+
+      {/* Challenge 2, 3 & 4: Voting Options with vote counts */}
+      {options.map((option, index) => (
+        <button
+          key={index}
+          className="option"
+          onClick={() => handleVote(index)}
+        >
+          <span>{option}</span> <span>{votes[index]}</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <div>
+      <PollComponent />
+    </div>
+  );
+}
+
+```

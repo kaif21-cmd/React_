@@ -890,3 +890,36 @@ return(
 export default ProductList;
 
 ```
+# Toggle Button
+```jsx
+import React, { useState } from "react";
+
+function ToggleButton() {
+  const [isOn, setIsOn] = useState(true); // default state is "on"
+
+  const handleToggle = () => {
+    setIsOn((prev) => !prev);
+  };
+
+  return (
+    <button
+      id="toggle"
+      onClick={handleToggle}
+      style={{
+        backgroundColor: isOn ? "black" : "lightgray",
+        color: isOn ? "white" : "black",
+        padding: "10px 20px",
+        border: "none",
+        borderRadius: "5px",
+        cursor: "pointer",
+        fontSize: "16px",
+      }}
+    >
+      {isOn ? "on" : "off"}
+    </button>
+  );
+}
+
+export default ToggleButton;
+
+```

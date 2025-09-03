@@ -1192,3 +1192,57 @@ const App = () => {
 export default App;
 
 ```
+
+# Current Clock Timer 
+```jsx
+import { useState, useEffect } from "react";
+
+const App = () => {
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  // Update every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer); // cleanup on unmount
+  }, []);
+
+  // Format day
+  const day = currentDate.toLocaleDateString("en-US", { weekday: "long" });
+
+  // Format date: Month DD, YYYY
+  const date = currentDate.toLocaleDateString("en-US", {
+    month: "long",
+    day: "2-digit",
+    year: "numeric",
+  });
+
+  // Format time: HH:MM:SS (24-hour format)
+  const time = currentDate
+    .toLocaleTimeString("en-US", {
+      hour12: false,
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
+
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center text-xl">
+      <div id="day" className="mb-2 font-bold text-blue-600">
+        {day}
+      </div>
+      <div id="date" className="mb-2 text-gray-700">
+        {date}
+      </div>
+      <div id="time" className="text-2xl font-mono text-green-600">
+        {time}
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+```

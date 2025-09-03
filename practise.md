@@ -1109,3 +1109,86 @@ export default function App() {
 }
 
 ```
+
+# Simple Interest Calculator
+```jsx
+import { useState, useEffect } from "react";
+
+const App = () => {
+  // Default values
+  const [principal, setPrincipal] = useState(1000);
+  const [rate, setRate] = useState(7);
+  const [time, setTime] = useState(5);
+  const [simpleInterest, setSimpleInterest] = useState(0);
+  const [totalAmount, setTotalAmount] = useState(0);
+
+  // Calculation runs whenever inputs change
+  useEffect(() => {
+    const si = (principal * rate * time) / 100;
+    setSimpleInterest(si.toFixed(2));
+    setTotalAmount((Number(principal) + si).toFixed(2));
+  }, [principal, rate, time]);
+
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
+      <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-md">
+        <h1 className="text-2xl font-bold text-center mb-6 text-blue-600">
+          Simple Interest Calculator
+        </h1>
+
+        {/* Inputs */}
+        <label className="block mb-3">
+          Principal Amount:
+          <input
+            id="principal"
+            type="number"
+            value={principal}
+            onChange={(e) => setPrincipal(Number(e.target.value))}
+            className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-blue-300"
+          />
+        </label>
+
+        <label className="block mb-3">
+          Interest Rate (% per year):
+          <input
+            id="rate"
+            type="number"
+            value={rate}
+            onChange={(e) => setRate(Number(e.target.value))}
+            className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-blue-300"
+          />
+        </label>
+
+        <label className="block mb-3">
+          Time (in years):
+          <input
+            id="time"
+            type="number"
+            value={time}
+            onChange={(e) => setTime(Number(e.target.value))}
+            className="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-blue-300"
+          />
+        </label>
+
+        {/* Outputs */}
+        <div
+          id="simpleInterest"
+          className="mt-4 p-3 bg-blue-50 rounded-md text-lg font-medium text-blue-700"
+        >
+          Simple Interest: ₹{simpleInterest}
+        </div>
+
+        <div
+          id="totalAmount"
+          className="mt-2 p-3 bg-green-50 rounded-md text-lg font-medium text-green-700"
+        >
+          Total Amount: ₹{totalAmount}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+```

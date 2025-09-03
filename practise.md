@@ -1018,3 +1018,51 @@ const App=()=>{
 }
 export default App;
 ```
+# Bill Amount Calculator 
+```jsx
+import { useState } from "react";
+
+const App = () => {
+  const [billAmount, setBillAmount] = useState(0);
+  const [tipPercent, setTipPercent] = useState(0);
+  const [totalAmount, setTotalAmount] = useState(0);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    if (name === "billAmount") setBillAmount(Number(value));
+    if (name === "tippercent") setTipPercent(Number(value));
+  };
+
+  const calculateAmount = () => {
+    const total = billAmount + (billAmount * tipPercent) / 100;
+    setTotalAmount(total);
+  };
+
+  return (
+    <div>
+      <input
+        type="number"
+        name="billAmount"
+        id="billAmount"
+        placeholder="Enter Bill Amount"
+        onChange={handleChange}
+      />
+
+      <input
+        type="number"
+        id="tippercent"
+        name="tippercent"
+        placeholder="Enter Tip %"
+        onChange={handleChange}
+      />
+
+      <button onClick={calculateAmount}>Total Amount</button>
+
+      <h2>{totalAmount}</h2>
+    </div>
+  );
+};
+
+export default App;
+
+```

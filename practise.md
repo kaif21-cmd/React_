@@ -923,3 +923,32 @@ function ToggleButton() {
 export default ToggleButton;
 
 ```
+# Toogle theme
+```jsx
+const { useState } = require("react")
+
+const App=()=>{
+    const [theme,setTheme]=useState('light')
+
+    const toggleTheme=()=>{
+        setTheme((prevTheme)=>(prevTheme==="light"?"dark":"light"))
+    }
+        return (
+    <div
+      style={{
+        height: "100vh",
+        transition: "0.3s ease-in",
+        backgroundColor: theme === "light" ? "white" : "black",
+        color: theme === "light" ? "black" : "white",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      <button onClick={toggleTheme}>Toggle Theme</button>
+    </div>
+    )
+}
+export default App;
+```

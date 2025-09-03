@@ -952,3 +952,42 @@ const App=()=>{
 }
 export default App;
 ```
+# Toogle theme by using the usetheme
+```jsx
+import React, { useState } from "react";
+
+const useTheme = () => {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
+
+  return { theme, toggleTheme };
+};
+
+const App = () => {
+  const { theme, toggleTheme } = useTheme();
+
+  return (
+    <div
+      style={{
+        height: "100vh",
+        transition: "0.3s ease-in",
+        backgroundColor: theme === "light" ? "white" : "black",
+        color: theme === "light" ? "black" : "white",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      <button onClick={toggleTheme}>Toggle Theme</button>
+    </div>
+  );
+};
+
+export default App;
+
+```
+

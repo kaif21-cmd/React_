@@ -990,4 +990,31 @@ const App = () => {
 export default App;
 
 ```
+# Paragraph Toogler
+```jsx
+const { useState } = require("react")
 
+const App=()=>{
+    const [isVisible,setisVisible]=useState(true)
+
+    const toggleparagraph=()=>{
+        setisVisible((prev)=>!prev)
+    }
+    return(
+        <div>
+            <button
+            onClick={toggleparagraph}
+            >
+            {isVisible ? "hide paragraph" :'showpargraph'}
+            </button>
+
+            {isVisible &&(
+                <p>
+                    this is paragraph
+                </p>
+            )}
+        </div>
+    )
+}
+export default App;
+```

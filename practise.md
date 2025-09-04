@@ -1415,3 +1415,73 @@ const Wrapper = styled.div`
 
 ```
 
+# Choose the Random Number 
+
+```jsx
+const { useState } = require("react")
+
+const App = () => {
+  const [startRange, setStartRange] = useState("")
+  const [endRange, setEndRange] = useState("")
+  const [randomNumber, setRandomNumber] = useState("")
+
+  const generateRandom = () => {
+    const Start = Number(startRange)
+    const End = Number(endRange)
+
+    // Validation
+    if (
+      isNaN(Start) || 
+      isNaN(End) || 
+      startRange === "" || 
+      endRange === ""
+    ) {
+      setRandomNumber("Invalid Input")
+      return
+    }
+
+    if (Start > End) {
+      setRandomNumber("Invalid Input")
+      return
+    }
+
+    // Random Number Generation (inclusive)
+    const num = Math.floor(Math.random() * (End - Start + 1)) + Start
+    setRandomNumber(num)
+  }
+
+  return (
+    <div>
+      <input
+        type="number"
+        id="startRange"
+        value={startRange}
+        onChange={(e) => setStartRange(e.target.value)}
+        placeholder="Start Range"
+      />
+
+      <input
+        type="number"
+        id="endRange"
+        value={endRange}
+        onChange={(e) => setEndRange(e.target.value)}
+        placeholder="End Range"
+      />
+
+      <br /><br />
+
+      <button id="generate" onClick={generateRandom}>
+        Generate
+      </button>
+
+      <div id="randomNumber">
+        <h1>{randomNumber}</h1>
+      </div>
+    </div>
+  )
+}
+
+export default App
+
+```
+

@@ -64,6 +64,25 @@ import './App.css'
 const App = () => {
   const [count, setCount] = useState(0)
   const [msg, setMsg] = useState('')
+  const [num, setNum] = useState('')
+  const [result, setResult] = useState('')
+
+  const handleChange = (e) => {
+    setNum(e.target.value)
+  }
+
+  const checkEvenOdd = () => {
+    if (num === '') {
+      setResult('Please enter a number')
+      return
+    }
+
+    if (Number(num) % 2 === 0) {
+      setResult(`The number ${num} is EVEN`)
+    } else {
+      setResult(`The number ${num} is ODD`)
+    }
+  }
 
   const increment = () => {
     if (count >= 10) {
@@ -97,13 +116,28 @@ const App = () => {
     <div>
       <h1>Count: {count}</h1>
       <p>{msg}</p>
+      <p>{result}</p>
 
       <button onClick={increment}>+1</button>
       <button onClick={decrement}>-1</button>
       <button onClick={resetz}>ResetKaif</button>
       <button onClick={top}>Top</button>
+
+      <br /><br />
+
+      <input
+        type="number"
+        value={num}
+        onChange={handleChange}
+        placeholder="Enter the number"
+      />
+
+      <button onClick={checkEvenOdd}>
+        Check Even / Odd
+      </button>
     </div>
   )
 }
 
 export default App
+

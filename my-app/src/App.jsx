@@ -88,6 +88,11 @@ const App = () => {
     setMsg('')
   }
 
+  const top = () => {
+    setCount(100)
+    setMsg('')
+  }
+
   return (
     <div>
       <h1>Count: {count}</h1>
@@ -95,11 +100,10 @@ const App = () => {
 
       <button onClick={increment}>+1</button>
       <button onClick={decrement}>-1</button>
-      <button onClick={resetz}>Reset</button>
+      <button onClick={resetz}>ResetKaif</button>
+      <button onClick={top}>Top</button>
     </div>
   )
 }
 
 export default App
-
-

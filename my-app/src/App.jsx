@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import Age_checker from './agechecker'
+import "./Palindrome.css";
+// import Age_checker from './agechecker'
+import Palindrome from './Palindrome';
 
 const App = () => {
   return (
     <div>
       <h1>Welcome</h1>
-      <Age_checker/>
+      {/* <Age_checker/> */}
+      <Palindrome />
     </div>
   );
 };

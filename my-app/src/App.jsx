@@ -1,3 +1,32 @@
+import { useState } from 'react'
+import './App.css'
+import Age_checker from './agechecker'
+
+const App = () => {
+  return (
+    <div>
+      <h1>Welcome</h1>
+      <Age_checker/>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
@@ -58,92 +87,89 @@
 
 
 
-import { useState } from 'react'
-import './App.css'
+// const App = () => {
+//   const [count, setCount] = useState(0)
+//   const [msg, setMsg] = useState('')
+//   const [num, setNum] = useState('')
+//   const [result, setResult] = useState('')
+//   const [name,setName]=useState('')
 
-const App = () => {
-  const [count, setCount] = useState(0)
-  const [msg, setMsg] = useState('')
-  const [num, setNum] = useState('')
-  const [result, setResult] = useState('')
-  const [name,setName]=useState('')
+//   const handleChange = (e) => {
+//     setNum(e.target.value)
+//   }
 
-  const handleChange = (e) => {
-    setNum(e.target.value)
-  }
+//   const checkEvenOdd = () => {
+//     if (num === '') {
+//       setResult('Please enter a number')
+//       return
+//     }
 
-  const checkEvenOdd = () => {
-    if (num === '') {
-      setResult('Please enter a number')
-      return
-    }
+//     if (Number(num) % 2 === 0) {
+//       setResult(`The number ${num} is EVEN`)
+//     } else {
+//       setResult(`The number ${num} is ODD`)
+//     }
+//   }
 
-    if (Number(num) % 2 === 0) {
-      setResult(`The number ${num} is EVEN`)
-    } else {
-      setResult(`The number ${num} is ODD`)
-    }
-  }
+//   const increment = () => {
+//     if (count >= 10) {
+//       setMsg('is se upar ni jayega bhai')
+//       return
+//     }
+//     setMsg('')
+//     setCount(count + 1)
+//   }
 
-  const increment = () => {
-    if (count >= 10) {
-      setMsg('is se upar ni jayega bhai')
-      return
-    }
-    setMsg('')
-    setCount(count + 1)
-  }
+//   const decrement = () => {
+//     if (count <= 0) {
+//       setMsg('ab is se niche ni jayega')
+//       return
+//     }
+//     setMsg('')
+//     setCount(count - 1)
+//   }
 
-  const decrement = () => {
-    if (count <= 0) {
-      setMsg('ab is se niche ni jayega')
-      return
-    }
-    setMsg('')
-    setCount(count - 1)
-  }
+//   const resetz = () => {
+//     setCount(0)
+//     setMsg('')
+//   }
 
-  const resetz = () => {
-    setCount(0)
-    setMsg('')
-  }
+//   const top = () => {
+//     setCount(100)
+//     setMsg('')
+//   }
+//   const Myname=()=>{
+//     setName("Rehan")
+//   }
 
-  const top = () => {
-    setCount(100)
-    setMsg('')
-  }
-  const Myname=()=>{
-    setName("Rehan")
-  }
+//   return (
+//     <div>
+//       <h1>Count: {count}</h1>
+//       <p>{msg}</p>
+//       <p>{name}</p>
+//       <p>{result}</p>
 
-  return (
-    <div>
-      <h1>Count: {count}</h1>
-      <p>{msg}</p>
-      <p>{name}</p>
-      <p>{result}</p>
+//       <button onClick={increment}>+1</button>
+//       <button onClick={decrement}>-1</button>
+//       <button onClick={resetz}>ResetKaif</button>
+//       <button onClick={top}>Top</button>
+//       <button onClick={Myname}>Click</button>
 
-      <button onClick={increment}>+1</button>
-      <button onClick={decrement}>-1</button>
-      <button onClick={resetz}>ResetKaif</button>
-      <button onClick={top}>Top</button>
-      <button onClick={Myname}>Click</button>
+//       <br /><br />
 
-      <br /><br />
+//       <input
+//         type="number"
+//         value={num}
+//         onChange={handleChange}
+//         placeholder="Enter the number"
+//       />
 
-      <input
-        type="number"
-        value={num}
-        onChange={handleChange}
-        placeholder="Enter the number"
-      />
+//       <button onClick={checkEvenOdd}>
+//         Check Even / Odd
+//       </button>
+//     </div>
+//   )
+// }
 
-      <button onClick={checkEvenOdd}>
-        Check Even / Odd
-      </button>
-    </div>
-  )
-}
-
-export default App
+// export default App
 

@@ -66,6 +66,7 @@ const App = () => {
   const [msg, setMsg] = useState('')
   const [num, setNum] = useState('')
   const [result, setResult] = useState('')
+  const [name,setName]=useState('')
 
   const handleChange = (e) => {
     setNum(e.target.value)
@@ -111,17 +112,22 @@ const App = () => {
     setCount(100)
     setMsg('')
   }
+  const Myname=()=>{
+    setName("Rehan")
+  }
 
   return (
     <div>
       <h1>Count: {count}</h1>
       <p>{msg}</p>
+      <p>{name}</p>
       <p>{result}</p>
 
       <button onClick={increment}>+1</button>
       <button onClick={decrement}>-1</button>
       <button onClick={resetz}>ResetKaif</button>
       <button onClick={top}>Top</button>
+      <button onClick={Myname}>Click</button>
 
       <br /><br />
 

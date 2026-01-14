@@ -2,18 +2,20 @@ import { useState } from 'react'
 import './App.css'
 import "./Palindrome.css";
 // import Age_checker from './agechecker'
-import Palindrome from './Palindrome';
+// import Palindrome from './Palindrome';
+import SimpleInterest from './SimpleInterest';
 
 const App = () => {
   return (
     <div>
       <h1>Welcome</h1>
       {/* <Age_checker/> */}
-      <Palindrome />
+      {/* <Palindrome /> */}
+      <SimpleInterest />
+      
     </div>
   );
 };
-
 export default App;
 
 

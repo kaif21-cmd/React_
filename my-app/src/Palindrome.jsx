@@ -12,9 +12,9 @@ const Palindrome = () => {
   const checking_palindrome = () => {
     const reverse = num.split("").reverse().join("");
     if (num === reverse) {
-      setResult(`✅ ${num} is a Palindrome`);
+      setResult(` ${num} is a Palindrome`);
     } else {
-      setResult(`❌ ${num} is NOT a Palindrome`);
+      setResult(`${num} is NOT a Palindrome`);
     }
   };
 
